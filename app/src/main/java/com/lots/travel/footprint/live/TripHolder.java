@@ -1,0 +1,40 @@
+package com.lots.travel.footprint.live;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.lots.travel.R;
+import com.lots.travel.footprint.BaseFootprintAdapter;
+import com.lots.travel.footprint.BaseHolder;
+import com.lots.travel.footprint.model.Footprint;
+import com.lots.travel.footprint.widget.ActiveItem;
+import com.lots.travel.footprint.widget.TripItem;
+
+/**
+ * Created by nalanzi on 2017/11/20.
+ */
+
+class TripHolder extends BaseHolder {
+    public static TripHolder create(ViewGroup parent, BaseFootprintAdapter adapter){
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_trip,parent,false);
+        return new TripHolder(adapter,v);
+    }
+
+    private TripItem mContent;
+
+    private TripHolder(BaseFootprintAdapter adapter, View v) {
+        super(adapter, v);
+    }
+
+    @Override
+    public void onCreate(View v) {
+        mContent = new TripItem(adapter);
+        mContent.onCreate(this,v);
+    }
+
+    @Override
+    public void onBind(Footprint t) {
+        mContent.onBind(this,t);
+    }
+}

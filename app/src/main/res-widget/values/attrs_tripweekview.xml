@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TripWeekView">
+        <attr name="weekTextSize" format="dimension"/>
+        <attr name="weekTextColor" format="color|reference"/>
+    </declare-styleable>
+</resources>

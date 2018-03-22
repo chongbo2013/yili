@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lots.travel.widget.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        app:layout_itemType="main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_timeline_spot"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginRight="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="@android:color/white"
+            android:foreground="@drawable/bg_card_ripple"
+            android:stateListAnimator="@drawable/lift_on_touch">
+
+            <com.lots.travel.widget.RoundRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:radius="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_cover_demo"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="寒霜"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_title_small"
+                    android:textSize="@dimen/fonts_desc"
+                    android:layout_alignTop="@id/iv_portrait"
+                    android:layout_toRightOf="@id/iv_portrait"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_portrait"
+                    android:layout_toRightOf="@id/iv_portrait"
+                    android:layout_marginLeft="10dp"
+                    android:isIndicator="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ico_swap"
+                    android:layout_marginRight="10dp"/>
+
+            </com.lots.travel.widget.RoundRelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        app:layout_itemType="menu"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_swipeitem_move"
+        android:text="@string/delete"
+        android:textSize="@dimen/head_small"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="10dp"/>
+
+</com.lots.travel.widget.SwipeItemLayout>

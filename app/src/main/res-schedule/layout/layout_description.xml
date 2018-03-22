@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="210dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="60dp"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <RadioGroup
+        android:id="@+id/ll_tabs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lots.travel.schedule.widget.DescriptionTab
+            android:id="@+id/tab_text"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule.desc.text"
+            android:checked="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/fonts_tip"
+            android:textColor="@color/text_desc_tab"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:background="@color/color_divider"/>
+
+        <com.lots.travel.schedule.widget.DescriptionTab
+            android:id="@+id/tab_audio"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule.desc.audio"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/fonts_tip"
+            android:textColor="@color/text_desc_tab"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:background="@color/color_divider"/>
+
+        <com.lots.travel.schedule.widget.DescriptionTab
+            android:id="@+id/tab_video"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule.desc.video"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/fonts_tip"
+            android:textColor="@color/text_desc_tab"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/shape_desc_text"
+        android:layout_below="@+id/ll_tabs"
+        android:textColor="@color/color_title_big"
+        android:textColorHint="@color/color_text"
+        android:hint="@string/schedule.desc.text.hint"
+        android:textSize="@dimen/fonts_tip"
+        android:maxEms="100"
+        android:gravity="top|left"
+        android:padding="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_text"
+        android:layout_marginTop="5dp"/>
+
+    <com.lots.travel.schedule.widget.VoiceRecordView
+        android:id="@+id/v_voice_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_tabs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_video"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_tabs">
+
+        <TextView
+            android:id="@+id/tv_video"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_title_small"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_centerInParent="true"
+            android:text="@string/schedule.desc.video.tip"
+            android:gravity="center"
+            android:drawableTop="@drawable/img_video_upload"
+            android:drawablePadding="10dp"
+            android:lineSpacingExtra="10dp"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_play_cover"/>
+
+            <TextView
+                android:id="@+id/tv_delete_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:textColor="@color/color_main"
+                android:textSize="@dimen/fonts_desc"
+                android:layout_below="@id/iv_play"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>

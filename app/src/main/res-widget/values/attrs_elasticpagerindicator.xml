@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ElasticPagerIndicator">
+        <attr name="elasticLineWidth" format="dimension"/>
+        <attr name="elasticLineColor" format="color|reference"/>
+        <attr name="elasticDividerWidth" format="dimension"/>
+        <attr name="elasticDividerColor" format="color|reference"/>
+    </declare-styleable>
+</resources>

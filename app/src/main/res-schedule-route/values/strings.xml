@@ -1,0 +1,44 @@
+<resources>
+    <string name="route.create.create">创建行程</string>
+    <string name="route.choose.spots">选择必去景点</string>
+    <string name="route.choose.spots.yw">游玩%.1f小时</string>
+    <string name="route.choose.spots.confirm.1">选择景点</string>
+    <string name="route.choose.spots.confirm.2">导入%d个景点</string>
+    
+    <string name="route.edit.labels">选择旅行标签</string>
+    <string name="edit.labels.confirm">匹配行程</string>
+    <string name="edit.labels.count.tip">建议旅行天数</string>
+    <string name="edit.labels.count">天</string>
+
+    <string name="edit.labels.theme.1">选择旅行主题</string>
+    <string name="edit.labels.theme.2">（最多选2个）</string>
+
+    <string name="edit.labels.requirement.1">选择旅行需求</string>
+    <string name="edit.labels.requirement.2">（最多选2个）</string>
+
+    <string name="edit.labels.daycount.0">旅行天数必须大于0</string>
+    <string name="match.route.failed">匹配行程失败</string>
+
+    <string name="matched.route.preview.publish">发布</string>
+    <string name="matched.route.route.more">更多行程</string>
+    <string name="matched.route.route.copy">复制行程</string>
+    <string name="matched.route.route.back">返回</string>
+
+    <string name="route.edit">编辑行程</string>
+    <string name="route.edit.edit">编辑</string>
+    <string name="route.edit.preview">预览</string>
+    <string name="route.edit.save">保存行程</string>
+
+    <string name="route.move">编辑</string>
+    <string name="route.preview.edit.again">再次编辑</string>
+    <string name="route.preview.edit.publish">发布</string>
+
+    <string name="route.match.more">%s的行程</string>
+    <string name="route.match.no">暂无匹配行程</string>
+    <string name="route.match.more.custom">自定义行程</string>
+    <string name="route.match.more.trust">%d%%的人觉得靠谱</string>
+    <string name="route.match.more.feature.1">行程特点：</string>
+    <string name="route.match.more.feature.2">%1$d天 %2$d景点</string>
+
+    <string name="route.edit.success">编辑成功</string>
+</resources>

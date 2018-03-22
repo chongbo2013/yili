@@ -1,0 +1,68 @@
+package com.lots.travel.main;
+
+import android.app.Activity;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.KeyEvent;
+import android.widget.Toast;
+
+import com.lots.travel.R;
+
+public class DoubleClickExitHelper {
+	private final Activity mActivity;
+	private OnExitListener onExitListener;
+	
+	private boolean isOnKeyBacking;
+	private Handler mHandler;
+	private Toast mBackToast;
+	
+	public DoubleClickExitHelper(Activity activity) {
+		mActivity = activity;
+		mHandler = new Handler(Looper.getMainLooper());
+	}
+	
+	/**
+	 * Activity onKeyDown事件
+	 * */
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if(keyCode != KeyEvent.KEYCODE_BACK) {
+			return false;
+		}
+		if(isOnKeyBacking) {
+			mHandler.removeCallbacks(onBackTimeRunnable);
+			if(mBackToast != null){
+				mBackToast.cancel();
+			}
+			if(onExitListener!=null)
+				onExitListener.onExit();
+			return true;
+		} else {
+			isOnKeyBacking = true;
+			if(mBackToast == null) {
+				mBackToast = Toast.makeText(mActivity, mActivity.getResources().getString(R.string.exit_double_click), Toast.LENGTH_SHORT);
+			}
+			mBackToast.show();
+			mHandler.postDelayed(onBackTimeRunnable, 2000);
+			return true;
+		}
+	}
+	
+	private Runnable onBackTimeRunnable = new Runnable() {
+		
+		@Override
+		public void run() {
+			isOnKeyBacking = false;
+			if(mBackToast != null){
+				mBackToast.cancel();
+			}
+		}
+	};
+
+	public void setOnExitListener(OnExitListener listener){
+		onExitListener = listener;
+	}
+	
+	public interface OnExitListener{
+		void onExit();
+	}
+}

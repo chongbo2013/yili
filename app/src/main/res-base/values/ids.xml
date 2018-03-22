@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="refresh_container" type="id"/>
+    <item name="refresh_default_empty" type="id"/>
+    <item name="refresh_default_progressbar" type="id"/>
+</resources>

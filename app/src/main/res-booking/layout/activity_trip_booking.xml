@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/booking"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.lots.travel.place.widget.PlaceProfileView
+                    android:id="@+id/v_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:text="@string/booking.date"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"/>
+
+                    <View
+                        android:id="@+id/divider_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:layout_below="@id/tv_date"
+                        android:layout_alignLeft="@id/tv_date"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"/>
+
+                    <com.lots.travel.booking.widget.TripDatePicker
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider_date"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_budget"
+                        android:text="@string/booking.budget"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"/>
+
+                    <View
+                        android:id="@+id/divider_budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:layout_below="@id/tv_budget"
+                        android:layout_alignLeft="@id/tv_budget"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_booking_undetermined"
+                        android:text="@string/booking.undetermined"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/head_small"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_below="@id/divider_budget"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_service"
+                        android:text="@string/booking.service"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"/>
+
+                    <View
+                        android:id="@+id/divider_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:layout_below="@id/tv_service"
+                        android:layout_alignLeft="@id/tv_service"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more"
+                        android:textSize="@dimen/fonts_tip"
+                        android:textColor="@color/color_main"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBaseline="@id/tv_service"
+                        android:drawablePadding="3dp"/>
+
+                    <com.lots.travel.widget.TripServiceView
+                        android:id="@+id/v_trip_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider_service"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_booking_undetermined"
+                        android:hint="@string/service.custom"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/head_small"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_below="@id/v_trip_service"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:maxLength="4"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_push"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/booking.push"
+                    android:textColor="@color/color_title_big"
+                    android:textSize="@dimen/head_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/label_newline"
+                    android:drawablePadding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:enabled="true"
+            android:background="@drawable/btn_bottom_white"
+            android:textColor="@color/color_title_small"
+            android:textSize="@dimen/head_big"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bottom_main"
+            android:textColor="@color/btn_bottom_main_text"
+            android:textSize="@dimen/head_big"
+            android:text="@string/confirm"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardStyle"
+    android:clickable="false"
+    android:layout_below="@id/fl_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="34dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:hint="@string/schedule.destination.search.hint"
+        android:textColorHint="@color/color_text"
+        android:textColor="@color/color_title_big"
+        android:drawableLeft="@drawable/ico_searchbar_search"
+        android:drawablePadding="4dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+</android.support.v7.widget.CardView>

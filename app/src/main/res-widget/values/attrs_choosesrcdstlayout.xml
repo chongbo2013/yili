@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChooseSrcDstLayout">
+        <attr name="timeGoHint" format="string"/>
+        <attr name="timeBackHint" format="string"/>
+        <attr name="placeSrcHint" format="string"/>
+        <attr name="placeDstHint" format="string"/>
+        <attr name="placeSrcDrawable" format="reference"/>
+        <attr name="placeDstDrawable" format="reference"/>
+    </declare-styleable>
+</resources>

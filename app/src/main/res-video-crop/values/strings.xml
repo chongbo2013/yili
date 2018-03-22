@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aliyun_video_crop_error">视频格式不支持</string>
+    <string name="aliyun_not_supported_audio">音频格式不支持</string>
+    <string name="sdcard_not_ready">SDCARD 没有准备好</string>
+</resources>

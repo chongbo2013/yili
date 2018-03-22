@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_active_drive">#7FFFD4</color>
+    <color name="bg_active_photograph">#FFEC8B</color>
+    <color name="bg_active_sport">#F08080</color>
+    <color name="bg_active_foods">#FFD700</color>
+    <color name="bg_active_games">#98F5FF</color>
+    <color name="bg_active_friends">#98F5FF</color>
+    <color name="bg_active_shopping">#CD919E</color>
+</resources>

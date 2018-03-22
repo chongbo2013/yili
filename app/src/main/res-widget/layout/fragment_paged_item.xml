@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lots.travel.widget.refresh.FixedSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@id/refresh_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@id/refresh_default_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/refresh.empty.default"
+            android:textSize="@dimen/head_small"
+            android:textColor="@color/color_text"
+            android:visibility="invisible"/>
+
+
+        <LinearLayout
+            android:id="@id/refresh_default_progressbar"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:indeterminateDrawable="@drawable/loading_circle"
+                android:indeterminateDuration="1500"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载..."
+                android:textSize="@dimen/head_small"
+                android:textColor="@color/color_text_secondary"
+                android:layout_marginLeft="4dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</com.lots.travel.widget.refresh.FixedSwipeRefreshLayout>

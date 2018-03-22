@@ -1,0 +1,4 @@
+mine - 游记版查看自己
+people - 游记版查看他人
+  note的详情分为游记版、行程版，MineNoteDetailActivity中的note与NoteDetailFragment中note的含义不同。
+  MineNoteDetailActivity内含有NoteDetailFragment、RouteDetailFragment，它们均继承至BaseDetailFragment。

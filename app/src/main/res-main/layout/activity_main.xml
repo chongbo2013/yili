@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lots.travel.widget.WindowInsertsControlLayout
+        android:id="@+id/fl_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"
+        android:layout_above="@+id/ll_tabs"/>
+
+    <RadioGroup
+        android:id="@+id/ll_tabs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/tab_destination"
+            android:paddingTop="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tab.destination"
+            android:button="@null"
+            android:background="@drawable/tab_main_background"
+            android:textColor="@color/text_tab"
+            android:textSize="@dimen/fonts_tab_text"
+            android:drawableTop="@drawable/tab_destination"
+            android:drawablePadding="6dp" />
+
+        <RadioButton
+            android:id="@+id/tab_trip"
+            android:paddingTop="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/tab.trip"
+            android:button="@null"
+            android:background="@drawable/tab_main_background"
+            android:gravity="center"
+            android:textColor="@color/text_tab"
+            android:textSize="@dimen/fonts_tab_text"
+            android:drawableTop="@drawable/tab_trip"
+            android:drawablePadding="6dp"/>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/tab_add_shadow"
+            android:visibility="invisible"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/tab_live"
+            android:paddingTop="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/tab.live"
+            android:button="@null"
+            android:background="@drawable/tab_main_background"
+            android:gravity="center"
+            android:textColor="@color/text_tab"
+            android:textSize="@dimen/fonts_tab_text"
+            android:drawableTop="@drawable/tab_live"
+            android:drawablePadding="6dp"/>
+
+        <RadioButton
+            android:id="@+id/tab_mine"
+            android:paddingTop="6dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/tab_main_background"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/tab_mine"
+            android:gravity="center"
+            android:text="@string/tab.mine"
+            android:textColor="@color/text_tab"
+            android:textSize="@dimen/fonts_tab_text" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/tab_add"
+        android:src="@drawable/tab_add"
+        android:scaleType="center"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:contentDescription="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

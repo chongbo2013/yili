@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="note.create.spot">创建景点</string>
+    <string name="note.create.spot.name">景点名称</string>
+    <string name="note.create.spot.name.input">输入景点名称</string>
+    <string name="note.create.spot.cover">景点封面</string>
+    <string name="note.create.spot.desc">一句话景点描述</string>
+    <string name="note.create.spot.desc.input">请输入一句话景点描述</string>
+    <string name="note.create.spot.location">标记地点</string>
+    <string name="note.create.empty">暂无数据</string>
+
+    <string name="note.destination.choose">选择目的地</string>
+    <string name="note.destination.address">旅行往返时间及地点</string>
+    <string name="note.destination.time.go">预计出发时间</string>
+    <string name="note.destination.time.back">预计返回时间</string>
+    <string name="note.destination.src">出发地</string>
+    <string name="note.destination.dst">目的地</string>
+
+    <string name="note.destination.theme.1">选择旅行主题</string>
+    <string name="note.destination.theme.2">（最多选2个）</string>
+
+    <string name="note.create.cover">添加游记封面</string>
+
+    <string name="note.edit">编辑</string>
+    <string name="note.write">写游记</string>
+    <string name="note.preview">预览</string>
+
+    <string name="note.move">编辑</string>
+
+    <string name="note.edit.again">再次编辑</string>
+    <string name="note.publish">发布</string>
+
+    <string name="note.move.add">添加景点</string>
+
+    <string name="note.preview.desc">第%d天行程描述</string>
+    <string name="note.preview.down">详情</string>
+    <string name="note.preview.up">收起</string>
+
+    <string name="note.destination.notime">请选择旅行往返时间</string>
+    <string name="note.destination.noplace">请选择旅行往返地点</string>
+    <string name="note.destination.notheme">请选择旅行主题</string>
+    <string name="note.destination.cover.choose">图片选取</string>
+
+    <string name="note.edit.success">编辑成功</string>
+
+    <string name="note.detail.note">游记</string>
+    <string name="note.detail.route">行程</string>
+    <string name="note.detail.comment">评论</string>
+    <string name="note.detail.collect">收藏</string>
+    <string name="note.detail.copy">复制行程</string>
+    <string name="note.detail.worth.desc">你觉得这篇游记值得参考吗？</string>
+    <string name="note.detail.worth">值得</string>
+    <string name="note.detail.notworth">不值得</string>
+    
+    <string name="note.detail.gz.group">编辑分组</string>
+    <string name="note.detail.gz.cancel">取消关注</string>
+</resources>

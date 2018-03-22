@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditUserLayout">
+        <attr name="showStar" format="boolean"/>
+        <attr name="starPadding" format="dimension"/>
+        <attr name="editLabel" format="string"/>
+        <attr name="editLabelSize" format="dimension"/>
+        <attr name="editLabelColor" format="color|reference"/>
+        <attr name="canEdit" format="boolean"/>
+        <attr name="editValue" format="string"/>
+        <attr name="editValueSize" format="color|reference"/>
+        <attr name="editValueColor" format="color|reference"/>
+        <attr name="editHint" format="string"/>
+        <attr name="editHintColor" format="color|reference"/>
+        <attr name="isDigit" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,4 @@
+1、place指旅行的地方，一个大概念，只支持一次旅行一个place
+
+2、每个place下面有spot、restaurant、hotel，共三种组成元素
+

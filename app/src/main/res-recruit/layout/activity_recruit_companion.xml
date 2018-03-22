@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/recruit.companion"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_toolbar"
+        android:layout_above="@+id/ll_btns">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_src_dst"
+                        android:text="@string/companion.src.dst"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <View
+                        android:id="@+id/d_src_dst"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_width"
+                        android:layout_below="@id/tv_src_dst"
+                        android:background="@color/color_divider"/>
+
+                    <com.lots.travel.widget.ChooseSrcDstLayout
+                        android:id="@+id/v_choose_src_dst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/d_src_dst"
+                        app:timeGoHint="@string/entering.time.go"
+                        app:timeBackHint="@string/entering.time.back"
+                        app:placeSrcHint="@string/entering.place.src"
+                        app:placeDstHint="@string/entering.place.dst"
+                        app:placeDstDrawable="@drawable/ico_build_flag"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_persons"
+                        android:text="@string/companion.persons"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <View
+                        android:id="@+id/d_persons"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_width"
+                        android:layout_below="@id/tv_persons"
+                        android:background="@color/color_divider"/>
+
+                    <com.lots.travel.recruit.widget.ChooseRecruitPeopleView
+                        android:id="@+id/v_choose_recruit_people"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/d_persons"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_expenses_tip"
+                        android:text="@string/companion.expenses"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_expenses_additional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_expenses_tip"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/companion.expenses.additional.add"
+                        android:textColor="@color/color_main"
+                        android:textSize="@dimen/fonts_tip"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:drawablePadding="5dp"/>
+
+                    <View
+                        android:id="@+id/d_expenses"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_width"
+                        android:layout_below="@id/tv_expenses_tip"
+                        android:background="@color/color_divider"/>
+
+                    <TextView
+                        android:id="@+id/tv_expenses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/fonts_desc"
+                        android:textColorHint="@color/color_text"
+                        android:hint="@string/companion.expenses.hint"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/d_expenses"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:background="@android:color/transparent"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_preferential"
+                    android:text="@string/companion.preferential"
+                    android:textColor="@color/color_title_big"
+                    android:textSize="@dimen/head_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/label_newline"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_preferential_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_expenses"
+                    android:layout_gravity="right|center"
+                    android:text="@string/companion.preferential.add"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/fonts_tip"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:drawablePadding="5dp"
+                    android:layout_marginRight="10dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_service"
+                        android:text="@string/booking.service"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"/>
+
+                    <View
+                        android:id="@+id/divider_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_divider"
+                        android:layout_below="@id/tv_service"
+                        android:layout_alignLeft="@id/tv_service"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more"
+                        android:textSize="@dimen/fonts_tip"
+                        android:textColor="@color/color_main"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBaseline="@id/tv_service"
+                        android:drawablePadding="3dp"/>
+
+                    <com.lots.travel.widget.TripServiceView
+                        android:id="@+id/v_trip_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider_service"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_custom_service"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_booking_undetermined"
+                        android:hint="@string/service.custom"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/fonts_desc"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_below="@id/v_trip_service"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:maxLength="4"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_require"
+                        android:text="@string/companion.require"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <View
+                        android:id="@+id/d_require"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_width"
+                        android:layout_below="@id/tv_require"
+                        android:background="@color/color_divider"/>
+
+                    <com.lots.travel.schedule.widget.DescriptionLayout
+                        android:id="@+id/v_require"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_below="@id/d_require"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:enabled="true"
+            android:background="@drawable/btn_bottom_cancel_press"
+            android:textColor="@color/color_title_small"
+            android:textSize="@dimen/head_big"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bottom_confirm_press"
+            android:textColor="@color/btn_bottom_main_text"
+            android:textSize="@dimen/head_big"
+            android:text="@string/confirm"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

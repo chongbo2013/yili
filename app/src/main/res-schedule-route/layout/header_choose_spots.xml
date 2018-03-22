@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/img_cover_demo"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_trip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        tools:text="普吉岛"
+        android:textSize="@dimen/head_big"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/tag_preview_location"
+        android:drawablePadding="5dp"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_trip_themes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:drawableRight="@drawable/ico_preview_edit"
+        android:drawablePadding="4dp"
+        android:layout_below="@id/tv_trip_name"
+        tools:text="摄影/度假 旅行游记"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/ll_country"
+        android:layout_below="@id/tv_trip_themes"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <com.lots.travel.widget.RoundImageView
+            android:id="@+id/iv_country"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:riv_border_radius="15dp"
+            tools:src="@drawable/img_tang"/>
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:text="泰国"
+            android:textSize="@dimen/head_small"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_top_gallery"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#4F000000"
+        android:layout_alignBottom="@id/iv_cover">
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        layout="@layout/layout_route_searchbar"
+        android:layout_below="@id/iv_cover"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="80dp"
+    android:layout_height="72dp"
+    android:background="@drawable/popup_list"
+    android:divider="@drawable/divider_horizontal_padding_10dp"
+    android:showDividers = "middle">
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.follow.cancel"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.follow.group"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+</LinearLayout>

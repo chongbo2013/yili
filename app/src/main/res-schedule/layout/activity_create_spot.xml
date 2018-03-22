@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/note.create.spot"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+    
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@+id/fl_toolbar"
+        android:layout_above="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_name"
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_spot_name"
+                        android:text="@string/note.create.spot.name"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"
+                        android:layout_margin="10dp"/>
+
+                    <View
+                        android:id="@+id/divider_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_width"
+                        android:layout_alignLeft="@id/tv_spot_name"
+                        android:layout_alignRight="@id/tv_spot_name"
+                        android:layout_below="@id/tv_spot_name"
+                        android:background="@color/color_divider"/>
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider_name"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:drawableRight="@drawable/ico_create_spot_edit"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/note.create.spot.name.input"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/fonts_desc"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_cover"
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_cover"
+                        android:text="@string/note.create.spot.cover"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"
+                        android:layout_margin="10dp"/>
+
+                    <View
+                        android:id="@+id/divider_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_width"
+                        android:layout_alignLeft="@id/tv_cover"
+                        android:layout_alignRight="@id/tv_cover"
+                        android:layout_below="@id/tv_cover"
+                        android:background="@color/color_divider"/>
+
+                    <FrameLayout
+                        android:layout_margin="10dp"
+                        android:layout_below="@id/divider_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/layout_change_cover"/>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_desc"
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:text="@string/note.create.spot.desc"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/head_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/label_newline"
+                        android:drawablePadding="5dp"
+                        android:layout_margin="10dp"/>
+
+                    <View
+                        android:id="@+id/details_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_width"
+                        android:layout_alignLeft="@id/tv_desc"
+                        android:layout_alignRight="@id/tv_desc"
+                        android:layout_below="@id/tv_desc"
+                        android:background="@color/color_divider"/>
+
+                    <EditText
+                        android:id="@+id/et_desc"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/details_divider"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:drawableRight="@drawable/ico_create_spot_edit"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/note.create.spot.desc.input"
+                        android:textColorHint="@color/color_text"
+                        android:textColor="@color/color_title_big"
+                        android:textSize="@dimen/fonts_desc"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:drawableLeft="@drawable/tag_location_solid"
+                    android:text="@string/note.create.spot.location"
+                    android:textColor="@color/color_title_big"
+                    android:textSize="@dimen/fonts_desc"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bottom_main"
+        android:textColor="@color/btn_bottom_main_text"
+        android:textSize="@dimen/head_big"
+        android:text="@string/save"/>
+
+</RelativeLayout>

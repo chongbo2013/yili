@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.lots.travel.widget.RoundImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        tools:src="@drawable/img_cover_demo"
+        android:scaleType="centerCrop"
+        app:riv_tag_gravity="center"
+        app:riv_tag_width="wrap_content"
+        app:riv_tag_height="wrap_content"
+        app:riv_tag_drawable="@drawable/img_play_cover"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <com.lots.travel.widget.LeftLineTextView
+        android:id="@+id/tv_short_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_images"
+        android:textColor="@color/color_title_small"
+        android:textSize="@dimen/fonts_tip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        tools:text="天然的海湾屏障、海浪柔和、适合游泳。"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="江西省·上饶市"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/fonts_tip"
+            android:drawableLeft="@drawable/ico_location_live"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/fonts_tip"
+            android:drawableLeft="@drawable/tag_comment"
+            android:drawablePadding="5dp"
+            android:layout_alignBaseline="@id/tv_location"
+            android:layout_toLeftOf="@+id/tv_praise"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/fonts_tip"
+            android:drawableLeft="@drawable/tag_praise_dis"
+            android:drawablePadding="5dp"
+            android:layout_alignBaseline="@id/tv_location"
+            android:layout_alignParentRight="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

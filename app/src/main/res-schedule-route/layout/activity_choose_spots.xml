@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_confirm"/>
+
+    <com.lots.travel.widget.WindowInsertsToolbarLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main">
+
+        <FrameLayout
+            android:id="@+id/fl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/btn_nav_foreground"
+                    android:src="@drawable/ico_back_nav"
+                    android:scaleType="center"
+                    android:layout_marginLeft="9.5dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/route.choose.spots"
+                    android:textSize="@dimen/head_medium"
+                    android:textColor="@android:color/white"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </com.lots.travel.widget.WindowInsertsToolbarLayout>
+
+    <include
+        android:id="@+id/layout_searchbar"
+        layout="@layout/layout_route_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@id/toolbar_container"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bottom_main"
+        android:text="@string/route.choose.spots.confirm.1"
+        android:textColor="@color/btn_bottom_main_text"
+        android:textSize="@dimen/head_big"/>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="平安携程境内旅行保险"
+        android:textColor="@color/color_title_small"
+        android:textSize="@dimen/fonts_desc"
+        android:layout_toRightOf="@id/cb_check"
+        android:layout_alignBaseline="@id/cb_check"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="80元"
+        tools:textColor="@color/color_main"
+        tools:textSize="@dimen/fonts_desc"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/cb_check"/>
+
+    <TextView
+        android:id="@+id/tv_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="适合人群：国内中长途旅行人员"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="#969696"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_active_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="保障时间：5月1日至5月7日"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="#969696"
+        android:layout_below="@id/tv_target"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/tv_name"/>
+
+    <TextView
+        android:id="@+id/tv_insurance_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_active_time"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_marginTop="5dp"
+        android:text="@string/insurance.check.rights"
+        android:textSize="@dimen/fonts_tip"
+        android:textColor="@color/color_main"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+</RelativeLayout>

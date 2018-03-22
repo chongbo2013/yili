@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.lots.travel">
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="android.permission.RECORD_VIDEO" />
+
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.READ_SETTINGS"/>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<!--  定位 -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+	<application
+		android:name=".TravelApplication"
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/sosona"
+		android:supportsRtl="true"
+		android:theme="@style/V1AppTheme"
+		tools:replace="android:label">
+
+		<!-- 示例页 -->
+		<activity
+			android:name=".SplashActivity"
+			android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+			android:theme="@style/V1AppTheme.Splash"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+        <activity
+			android:name=".schedule.route.RouteChoosePlaceActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.note.CreateNoteActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.ChooseTripDateActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".place.ChooseStaysActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".schedule.SearchPlaceActivity"
+			android:screenOrientation="portrait"/>
+
+        <activity
+			android:name=".main.MainActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".login.PhoneLoginActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".login.LoginActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".wxapi.WXEntryActivity"
+			android:theme="@style/V1AppTheme.Transparent"
+			android:screenOrientation="portrait"
+			android:launchMode="singleTask"
+			android:exported="true"/>
+
+        <activity android:name=".main.message.MessageTabActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".main.setting.SettingActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".booking.BookingChoosePlaceActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".booking.TripBookingActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity android:name=".place.ChooseComponentsActivity"
+			android:windowSoftInputMode="adjustPan"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".widget.EditTextActivity"
+			android:windowSoftInputMode="adjustResize"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".widget.images.ImagePickerActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".base.WebViewActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".widget.images.LookUpPictureActivity"
+			android:screenOrientation="portrait"/>
+
+		<!-- 我的订单界面-->
+		<activity
+			android:name=".main.info.mine.MineOrderActivity"
+			android:screenOrientation="portrait">
+		</activity>
+
+
+		<!-- 我的旅行界面-->
+
+        <!-- 我的众筹界面-->
+
+        <!-- 我的回报界面-->
+
+        <!-- 我的钱包界面-->
+
+        <!-- 我的收藏界面-->
+
+        <!-- 我想去的目的地界面-->
+
+
+        <!-- 我关注的旅行达人界面-->
+		<activity android:name=".main.info.mine.MineFollowPeoplesActivity"
+			android:screenOrientation="portrait">
+		</activity>
+
+
+		<!-- 我关注的旅行标签界面-->
+
+        <!-- 我的群组界面-->
+
+        <!-- 我的信息界面-->
+		<activity
+			android:name=".main.info.mine.EditUserInfoActivity"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity
+			android:name=".main.info.person.PersonMainActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.record.AliyunVideoRecorder"
+			android:theme="@style/AliyunVideoUIStytle"
+			tools:replace="android:theme"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.edit.editor.EditorActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.edit.effectmanager.EffectManagerActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.edit.effectmanager.MoreCaptionActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.edit.effectmanager.MoreMVActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.edit.effectmanager.MorePasterActivity"
+			android:screenOrientation="portrait"/>
+
+        <activity
+			android:name=".video.RequestRecordActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.CutCoverActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".footprint.PublishImagesActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".footprint.PublishVideoActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.note.edit.NoteEditScheduleActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.note.move.NoteMoveScheduleActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.note.preview.NotePreviewScheduleActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.route.RouteBottomActivity"
+			android:theme="@style/V1AppTheme.Transparent"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.route.EditRouteLabelsActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.route.match.MatchRouteActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.route.match.MatchedRoutePreviewActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.route.ChooseSpotsActivity"
+			android:windowSoftInputMode="adjustNothing"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.route.edit.RouteEditScheduleActivity"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".schedule.route.move.RouteMoveScheduleActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".schedule.route.preview.RoutePreviewScheduleActivity"
+            android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.route.match.MoreMatchedRoutesActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".place.AddPlaceCommentActivity"
+			android:theme="@style/AddPlaceCommentTheme"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".recruit.personal.RecruitCompanionActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".recruit.ExpenseInstructionActivity"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".recruit.ProductEnteringActivity"
+            android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.destination.CityPageSearchPlaceActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.ShippingAddressListActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.EditShippingAddressActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.AddShippingAddressActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.CheckCertificationActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.CommitCertificationInfoActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.AboutActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.CrowFundingServiceActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.FeedbackActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.setting.OursActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.info.mine.MineTravelTagsActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.info.mine.MineFollowPlacesActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".main.info.mine.MineFollowItemsActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".schedule.note.detail.MineNoteDetailActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.importer.ImportMediaActivity"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.crop.AliyunImageCrop"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".video.crop.AliyunVideoCrop"
+			android:screenOrientation="portrait"/>
+
+		<activity
+			android:name=".footprint.AddFootprintCommentActivity"
+			android:screenOrientation="portrait"
+			android:configChanges="keyboardHidden|orientation"
+			android:windowSoftInputMode="adjustResize"/>
+
+		<activity
+			android:name=".base.WebViewStackActivity"
+			android:screenOrientation="portrait"/>
+
+		<!-- 高德地图 -->
+		<meta-data
+			android:name="com.amap.api.v2.apikey"
+			android:value="8a75f4e976b5b41785a76e884ffa4bce" />
+		<service android:name="com.amap.api.location.APSService" />
+
+		<provider
+			android:name="android.support.v4.content.FileProvider"
+			android:authorities="com.lots.travel.provider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/provider_paths"/>
+		</provider>
+
+	</application>
+
+</manifest>

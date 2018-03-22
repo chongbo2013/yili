@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/bg_dialog_base"
+    android:showDividers="middle"
+    android:divider="@drawable/divider_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule.traffic.choose"
+        android:textColor="@color/color_title_small"
+        android:textSize="@dimen/head_small"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <com.lots.travel.schedule.widget.traffic.TrafficPicker
+            android:id="@+id/v_mode"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            app:shadowDrawable="@drawable/shadow_choose_traffic"
+            app:highlightTextColor="@color/color_main"
+            app:highlightTextSize="@dimen/fonts_desc"
+            app:textColor="@color/color_text"
+            app:textSize="@dimen/fonts_desc"
+            app:itemHeight="36dp"
+            app:centerClipHeight="36dp"
+            app:tiltDegree="36"
+            app:cycle="true"
+            app:iconMarginLeft="10dp"/>
+
+        <com.lots.travel.schedule.widget.traffic.TimePicker
+            android:id="@+id/v_hour"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:shadowDrawable="@drawable/shadow_choose_traffic"
+            app:highlightTextColor="@color/color_main"
+            app:highlightTextSize="@dimen/head_small"
+            app:textColor="@color/color_text"
+            app:textSize="@dimen/head_small"
+            app:itemHeight="36dp"
+            app:centerClipHeight="36dp"
+            app:tiltDegree="36"
+            app:cycle="true"
+            app:labelText="小时"
+            app:labelTextSize="@dimen/fonts_tip"
+            app:labelTextColor="#969696"
+            app:labelMarginLeft="6dp"
+            app:iconMarginLeft="10dp"
+            app:timeCount="24"/>
+
+        <com.lots.travel.schedule.widget.traffic.TimePicker
+            android:id="@+id/v_minute"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/v_hour"
+            android:layout_height="match_parent"
+            app:shadowDrawable="@drawable/shadow_choose_traffic"
+            app:highlightTextColor="@color/color_main"
+            app:highlightTextSize="@dimen/head_small"
+            app:textColor="@color/color_text"
+            app:textSize="@dimen/head_small"
+            app:itemHeight="36dp"
+            app:centerClipHeight="36dp"
+            app:tiltDegree="36"
+            app:cycle="true"
+            app:labelText="分钟"
+            app:labelTextSize="@dimen/fonts_tip"
+            app:labelTextColor="#969696"
+            app:labelMarginLeft="6dp"
+            app:iconMarginLeft="10dp"
+            app:timeCount="60"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_choose_traffic"
+            android:text="@string/cancel"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/fonts_desc"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_divider"/>
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_choose_traffic"
+            android:text="@string/save"
+            android:gravity="center"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/fonts_desc"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

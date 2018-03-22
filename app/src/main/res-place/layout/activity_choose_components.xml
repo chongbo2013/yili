@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:foreground="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_centerVertical="true"/>
+
+        <com.lots.travel.widget.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="@string/place.search.key.spot"
+            app:importable="true"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/fl_toolbar"
+        app:tabIndicatorColor="@color/color_main"
+        app:tabSelectedTextColor="@color/color_main"
+        app:tabTextColor="@color/color_title_big"
+        app:tabTextAppearance="@style/ComponentsTabTextAppearance"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_above="@+id/btn_choose"/>
+
+    <Button
+        android:id="@+id/btn_choose"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bottom_main"
+        android:textColor="@color/btn_bottom_main_text"
+        android:textSize="@dimen/head_big"
+        android:enabled="false"
+        android:text="@string/place.choose"/>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/note.move"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_below="@id/fl_toolbar"
+        android:layout_above="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/btn_bottom_main"
+        android:textColor="@color/btn_bottom_main_text"
+        android:textSize="@dimen/head_big"
+        android:text="@string/confirm"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

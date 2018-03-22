@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp">
+
+    <ImageView
+        android:id="@+id/iv_identify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_footprint_note"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="2017年3月20日 23:20"
+        android:textColor="@color/color_text_secondary"
+        android:textSize="@dimen/fonts_desc"
+        android:gravity="center"
+        android:layout_toRightOf="@id/iv_identify"
+        android:layout_alignTop="@id/iv_identify"
+        android:layout_alignBottom="@id/iv_identify"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公开"
+        android:textColor="@color/color_text_secondary"
+        android:textSize="@dimen/fonts_tip"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/tv_tip"
+        android:drawableRight="@drawable/arrow_down_gray"
+        android:drawablePadding="4dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_below="@id/tv_tip"
+        android:layout_alignLeft="@id/tv_tip"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        tools:text="去朝觐伟大的世界尽头"
+        android:textColor="@color/color_title_small"
+        android:textSize="@dimen/fonts_desc"/>
+
+    <android.support.v7.widget.CardView
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_tip"
+        android:layout_below="@id/tv_tip"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.lots.travel.widget.RoundImageView
+                android:id="@+id/iv_portrait"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:riv_border_radius="3dp"
+                tools:src="@drawable/img_tang"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="霍安琪"
+                android:textSize="@dimen/fonts_desc"
+                android:textColor="@color/color_title_small"
+                android:layout_toRightOf="@id/iv_portrait"
+                android:layout_alignTop="@id/iv_portrait"
+                android:layout_marginLeft="10dp"
+                android:drawableRight="@drawable/ico_female"
+                android:drawablePadding="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="旅行达人"
+                android:textSize="@dimen/fonts_tip"
+                android:textColor="@color/color_text_secondary"
+                android:layout_alignLeft="@id/tv_name"
+                android:layout_alignBottom="@id/iv_portrait"/>
+
+            <include
+                layout="@layout/layout_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_portrait"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/route.edit"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:text="@string/route.edit.edit"
+            android:textSize="@dimen/head_small"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_toolbar"
+        android:layout_above="@+id/ll_btns"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <com.lots.travel.schedule.widget.CircleIndicatorLayout
+        android:id="@+id/circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/fl_toolbar"
+        android:background="@android:color/white"
+        app:circleRadius="15dp"
+        app:circleBackgroundDrawable="@drawable/shape_circle_day"
+        app:circleTextSize="@dimen/circle_indicator_size"
+        app:circleTextColor="@android:color/white"
+        app:circlePadding="6dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_preview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:enabled="true"
+            android:background="@drawable/btn_bottom_white"
+            android:textColor="@color/color_title_small"
+            android:textSize="@dimen/head_big"
+            android:text="@string/route.edit.preview"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bottom_main"
+            android:textColor="@color/btn_bottom_main_text"
+            android:textSize="@dimen/head_big"
+            android:text="@string/route.edit.save"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

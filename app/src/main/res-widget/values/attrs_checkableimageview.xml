@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CheckableImageView">
+        <attr name="checkedForeground" format="reference" />
+        <attr name="checked" format="boolean"/>
+    </declare-styleable>
+
+</resources>

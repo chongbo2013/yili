@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fonts_tip">13dp</dimen>
+    <dimen name="fonts_desc">14dp</dimen>
+    <dimen name="head_small">16dp</dimen>
+    <dimen name="head_medium">17dp</dimen>
+    <dimen name="head_big">19dp</dimen>
+    <dimen name="head_large">21dp</dimen>
+    <dimen name="head_huge">23dp</dimen>
+    <dimen name="btn_height">49dp</dimen>
+    <dimen name="divider_width">0.5dp</dimen>
+    <dimen name="actionBarSize">48dp</dimen>
+
+</resources>

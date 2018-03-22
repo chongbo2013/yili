@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VoiceBar">
+        <attr name="arcColor" format="reference|color"/>
+        <attr name="playArcColor" format="reference|color"/>
+        <attr name="arcPadding" format="dimension"/>
+        <attr name="arcDegree" format="float"/>
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="arcRadius" format="dimension"/>
+        <attr name="arcSpace" format="dimension"/>
+        <attr name="backgroundColor" format="reference|color"/>
+        <attr name="backgroundRadius" format="dimension"/>
+        <attr name="triangleEdge" format="dimension"/>
+    </declare-styleable>
+</resources>

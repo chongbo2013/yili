@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <com.lots.travel.widget.RoundImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:riv_border_radius="2dp"
+        tools:src="@drawable/img_tang"
+        android:scaleType="centerCrop"/>
+
+    <com.lots.travel.widget.VoiceBar
+        android:id="@+id/voice_bar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        app:backgroundRadius="3.5dp"
+        app:backgroundColor="#23B6B7"
+        app:triangleEdge="13dp"
+        app:arcPadding="15dp"
+        app:arcRadius="3dp"
+        app:arcWidth="2dp"
+        app:arcSpace="2dp"
+        app:arcDegree="80"
+        app:arcColor="@android:color/white"
+        app:playArcColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        tools:text="60&quot;"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"/>
+
+</merge>

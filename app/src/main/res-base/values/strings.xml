@@ -1,0 +1,24 @@
+<resources>
+    <string name="sosona">众游旅行</string>
+    <string name="refresh.empty.default">暂无内容</string>
+
+    <string name="load.ing">等待中&#8230;</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="completed">完成</string>
+    <string name="commit">提交</string>
+    <string name="exit.app">退出登录</string>
+    <string name="add">添加</string>
+    <string name="reset">重置</string>
+    <string name="tilde">~</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+
+    <string name="exit.token.invalidate">认证信息过期或失效，请重新登录</string>
+
+    <string name="unit.rmb">元</string>
+    <string name="sharing_success">分享成功</string>
+    <string name="sharing_to_friends">分享到微信好友</string>
+    <string name="sharing_to_moments">分享到微信朋友圈</string>
+</resources>

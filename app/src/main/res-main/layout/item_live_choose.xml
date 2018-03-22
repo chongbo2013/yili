@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    tools:text="只看游记"
+    android:textColor="@color/color_title_small"
+    android:textSize="@dimen/fonts_desc"
+    android:gravity="center"/>

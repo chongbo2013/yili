@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_create_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignTop="@+id/ll_travel_notes"
+        android:layout_alignLeft="@+id/ll_brigade_snap"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_create_travel"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_create_travel" />
+
+        <TextView
+            android:id="@+id/tv_create_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.create.travel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_travel_notes"
+        android:layout_above="@+id/ll_travel_live"
+        android:layout_alignLeft="@+id/ll_travel_live"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_travel_notes"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_travel_notes"/>
+
+        <TextView
+            android:id="@+id/tv_travel_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.travel.notes"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_footprint"
+        android:layout_alignTop="@id/ll_travel_notes"
+        android:layout_alignLeft="@+id/ll_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_footprint"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_footprint" />
+
+        <TextView
+            android:id="@+id/tv_footprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.footprint"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_booking_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/ll_mall"
+        android:layout_alignTop="@+id/ll_travel_notes"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_booking_travel"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_booking_travel"/>
+
+        <TextView
+            android:id="@+id/tv_booking_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.booking.travel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/anchor_x"
+        android:layout_centerHorizontal="true"
+        android:layout_width="1px"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_brigade_snap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignTop="@+id/ll_travel_live"
+        android:layout_toLeftOf="@+id/ll_travel_live"
+        android:layout_marginRight="30dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_brigade_snap"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_brigade_snap"/>
+
+        <TextView
+            android:id="@+id/tv_brigade_snap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.brigade.snap"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_travel_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_close"
+        android:layout_toLeftOf="@id/anchor_x"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_travel_live"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_travel_live"/>
+
+        <TextView
+            android:id="@+id/tv_travel_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.travel.live"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_above="@+id/iv_anchor"
+        android:layout_toRightOf="@+id/anchor_x"
+        android:layout_toEndOf="@+id/anchor_x"
+        android:layout_marginStart="12dp">
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_message"/>
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.message"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mall"
+        android:layout_toRightOf="@+id/ll_message"
+        android:layout_alignTop="@+id/ll_message"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_mall"
+            android:layout_width="@dimen/ico_size_menuitem"
+            android:layout_height="@dimen/ico_size_menuitem"
+            android:src="@drawable/ico_mall"/>
+
+        <TextView
+            android:id="@+id/tv_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menuitem.mall"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_anchor"
+        android:background="@drawable/tab_add"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ico_menubar_close"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/iv_anchor"/>
+
+</merge>

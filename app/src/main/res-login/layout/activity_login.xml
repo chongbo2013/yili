@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_login">
+
+	<Button
+		android:id="@+id/btn_wechat"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/btn_height"
+		android:background="@drawable/btn_login"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/head_big"
+		android:text="@string/login.wechat"
+		android:layout_above="@+id/btn_phone"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginBottom="25dp"/>
+
+	<Button
+		android:id="@+id/btn_phone"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/btn_height"
+		android:background="@drawable/btn_login"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/head_big"
+		android:text="@string/login.phone"
+		android:layout_above="@+id/ll_terms_privacy"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginBottom="30dp"/>
+
+	<LinearLayout
+		android:id="@+id/ll_terms_privacy"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:gravity="center_horizontal"
+		android:layout_marginBottom="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login.tip.terms.privacy"
+			android:textSize="@dimen/fonts_tip"
+			android:textColor="@color/color_text"/>
+
+		<TextView
+			android:id="@+id/tv_terms"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login.terms"
+			android:textSize="@dimen/fonts_tip"
+			android:textColor="@color/color_main"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login.tip.and"
+			android:textSize="@dimen/fonts_tip"
+			android:textColor="@color/color_text"/>
+
+		<TextView
+			android:id="@+id/tv_privacy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login.privacy"
+			android:textSize="@dimen/fonts_tip"
+			android:textColor="@color/color_main"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

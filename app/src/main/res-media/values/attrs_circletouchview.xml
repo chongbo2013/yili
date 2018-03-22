@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleTouchView">
+        <attr name="innerRadius" format="dimension"/>
+        <attr name="innerColor" format="color|reference"/>
+        <attr name="minInnerRadius" format="dimension"/>
+        <attr name="outerRadius" format="dimension"/>
+        <attr name="outerColor" format="color|reference"/>
+        <attr name="progressWidth" format="dimension"/>
+        <attr name="progressColor" format="color|reference"/>
+        <attr name="duration" format="integer"/>
+    </declare-styleable>
+</resources>

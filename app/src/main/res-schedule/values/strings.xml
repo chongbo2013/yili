@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="schedule.trip.date">旅行时间</string>
+    <string name="schedule.trip.date.go">出发时间</string>
+    <string name="schedule.trip.date.back">返回时间</string>
+    <string name="schedule.trip.date.nogo">请先选择出发时间</string>
+    <string name="schedule.trip.date.lessback">返回时间不可小于出发时间</string>
+    <string name="schedule.trip.date.noback">请选择返回时间</string>
+    <string name="schedule.trip.date.retry">是否重新选择时间段？</string>
+
+    <string name="schedule.edit.text">编辑</string>
+    <string name="schedule.edit.text.hint">编写描述内容</string>
+
+    <string name="schedule.destination.search">目的地</string>
+    <string name="schedule.destination.search.hint">输入目的地</string>
+
+    <string name="schedule.traffic.delete">删除此处出行方式？</string>
+    <string name="schedule.traffic.choose">选择交通方式</string>
+
+    <string name="requirement.vacation">度假</string>
+    <string name="requirement.budget">穷游</string>
+    <string name="requirement.friends">交友</string>
+    <string name="requirement.honeymoon">蜜月</string>
+    <string name="requirement.parenting">亲子</string>
+    <string name="requirement.elder">老人</string>
+
+    <string name="schedule.desc.current.add">添加当日旅行描述</string>
+    <string name="schedule.desc.group">第%d天 旅行日记</string>
+    <string name="schedule.desc.text">图文描述</string>
+    <string name="schedule.desc.audio">语音录入</string>
+    <string name="schedule.desc.video">上传视频</string>
+    <string name="schedule.desc.text.hint">编写描述内容（100字以内）</string>
+    <string name="schedule.desc.video.tip">点击上传视频文件\n提示：视频文件请小于30秒</string>
+
+    <string name="schedule.arrow.down">补充</string>
+    <string name="schedule.arrow.up">收起</string>
+
+    <string name="schedule.edit.choose.stay">选择入住酒店</string>
+
+    <string name="schedule.tripmode.add">添加出行方式</string>
+
+    <string name="schedule.cover.change">更换封面</string>
+    <string name="schedule.cover.upload">点我上传封面</string>
+
+    <string name="place.search.tip.hots">热门搜索</string>
+    <string name="place.search.tip.result">搜索结果</string>
+
+    <string name="schedule.userinfo.map">点击地图查看景点分布</string>
+    <string name="schedule.userinfo.auth">认证</string>
+    <string name="schedule.userinfo.gz">+关注</string>
+    <string name="schedule.userinfo.gzed">已关注</string>
+</resources>

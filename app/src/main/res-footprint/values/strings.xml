@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog.publish.footprint">发布足迹</string>
+    <string name="publish.footprint.video">拍摄视频</string>
+    <string name="publish.footprint.album">手机相册</string>
+    <string name="publish.footprint.photo">拍照上传</string>
+    
+    <string name="footprint.mine.publish">现场</string>
+    <string name="footprint.mine.publish.tip">点击添加新的足迹</string>
+    
+    <string name="publish.state.public">公开</string>
+    <string name="publish.state.friends">仅好友可见</string>
+    <string name="publish.state.me">仅自己可见</string>
+    
+    <string name="footprint.note.title">发布游记《%s》</string>
+    
+    <string name="footprint.publish.images">添加足迹</string>
+    <string name="footprint.publish.video">发布视频</string>
+    <string name="footprint.publish.publish">发布</string>
+    <string name="footprint.publish.text">分享此刻的心情</string>
+    <string name="footprint.publish.location">不显示位置</string>
+    <string name="footprint.publish.targets">对外公开</string>
+
+    <string name="footprint.publish.empty.tip">请添加发布内容</string>
+    <string name="footprint.publish.success">发布成功</string>
+
+    <string name="footprint.comment.footprint">足迹详情</string>
+    <string name="footprint.comment.note">评论</string>
+    <string name="footprint.comment.replay">回复</string>
+    <string name="footprint.comment.replay.colon">：</string>
+</resources>

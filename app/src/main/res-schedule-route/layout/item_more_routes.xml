@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_portrait"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/img_tang"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="寒霜"
+            android:layout_toRightOf="@id/iv_portrait"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/head_small"
+            android:textColor="@color/color_title_big"
+            android:maxLines="1"
+            tools:drawableRight="@drawable/ico_female"
+            android:drawablePadding="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="10dp"
+            tools:text="演员 艺人"
+            android:textSize="@dimen/fonts_desc"
+            android:textColor="@color/color_title_small"/>
+
+        <TextView
+            android:id="@+id/tv_percent_trust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_alignBottom="@id/iv_portrait"
+            tools:text="92%的人觉得靠谱"
+            android:textSize="@dimen/fonts_tip"
+            android:textColor="@color/color_text_secondary"/>
+
+        <TextView
+            android:id="@+id/tv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_percent_trust"
+            android:layout_alignParentRight="true"
+            tools:text="101"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/fonts_tip"
+            android:drawableRight="@drawable/tag_praise_en"
+            android:drawablePadding="5dp"/>
+
+        <com.lots.travel.widget.LeftLineTextView
+            android:id="@+id/tv_feature"
+            tools:text="行程特点：5天 26景点"
+            android:textColor="@color/color_title_small"
+            android:textSize="@dimen/fonts_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_portrait"
+            android:layout_alignLeft="@id/iv_portrait"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

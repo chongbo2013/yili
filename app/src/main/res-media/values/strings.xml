@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video.upload">我的视频</string>
+    <string name="video.edit">编辑视频</string>
+</resources>

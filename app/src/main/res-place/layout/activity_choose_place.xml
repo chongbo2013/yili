@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize">
+        
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <com.lots.travel.widget.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="240dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:hint="@string/place.search"
+            app:importable="true"
+            app:immediate="false"/>
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ico_menu_nav"
+            android:background="@drawable/btn_nav_foreground"
+            android:scaleType="center"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right|center_vertical"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/btn_confirm"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bottom_main"
+        android:textColor="@color/btn_bottom_main_text"
+        android:textSize="@dimen/head_big"/>
+
+</RelativeLayout>

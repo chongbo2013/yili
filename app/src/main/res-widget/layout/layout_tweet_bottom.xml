@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fl_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:maxLines="3"
+            tools:text="测试\n测试sss\n测试\n事实上"
+            android:textColor="@color/color_title_small"
+            android:textSize="@dimen/fonts_tip"
+            android:textColorHint="@color/color_text"
+            android:hint="@string/tweet.bottom.hint"
+            android:layout_gravity="bottom"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="46dp"
+            android:src="@drawable/ico_tweet_face"
+            android:layout_gravity="right|bottom"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/tweet.bottom.send"
+            android:textSize="@dimen/fonts_desc"
+            android:textColor="@color/btn_tweet_send"
+            android:layout_gravity="right|bottom"
+            android:enabled="false"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFCDCDCD"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="46dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFCDCDCD"/>
+
+    <FrameLayout
+        android:id="@+id/fl_faces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_input"
+        android:visibility="gone"/>
+
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="login.wechat">微信登录</string>
+	<string name="login.phone">手机动态登录</string>
+	<string name="login.tip.terms.privacy">登录代表你同意</string>
+	<string name="login.tip.and">和&#160;</string>
+	<string name="login.terms">《众游网络使用协议》</string>
+	<string name="login.privacy">隐私条款</string>
+
+	<string name="phone.login">手机动态登录</string>
+	<string name="phone.hint">手机号码</string>
+	<string name="pin.hint">输入验证码</string>
+	<string name="pin.obtain">获取验证码</string>
+	<string name="pin.obtaining">%d秒后重试</string>
+	<string name="phone.login.login">登录</string>
+
+	<string name="login.wechat.noclient">尚未安装微信客户端，无法登录</string>
+</resources>

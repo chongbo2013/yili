@@ -1,0 +1,55 @@
+ext {
+    //插件
+    androidBuildGradlePlugin = 'com.android.tools.build:gradle:2.3.3'
+    externalGreendaoPlugin = 'org.greenrobot:greendao-gradle-plugin:3.1.0'
+
+    //版本信息
+    projectVersionCode = 1;
+    projectVersionName= "1.0.0"
+    greendaoSchemaVersion = 12
+
+    externalCompileSdkVersion = 27
+    externalBuildToolsVersion = "26.0.2"
+    externalAndroidSupportSDKVersion = "27.1.0"
+    externalMinSdkVersion = 17
+    externalTargetSdkVersion = 27
+
+    //android依赖库
+    androidSupportMultidex = "com.android.support:multidex:1.0.1"
+    androidSupportDesign = "com.android.support:design:${externalAndroidSupportSDKVersion}"
+    androidSupportRecyclerView = "com.android.support:recyclerview-v7:${externalAndroidSupportSDKVersion}"
+    androidSupportCardView = "com.android.support:cardview-v7:${externalAndroidSupportSDKVersion}"
+    androidSupportV4 = "com.android.support:support-v4:${externalAndroidSupportSDKVersion}"
+    androidSupportCompat = "com.android.support:support-compat:${externalAndroidSupportSDKVersion}"
+    androidCompatV7 = "com.android.support:appcompat-v7:${externalAndroidSupportSDKVersion}"
+
+    externalRetrofit = 'com.squareup.retrofit2:retrofit:2.3.0'
+    externalRetrofitGson = 'com.squareup.retrofit2:converter-gson:2.3.0'
+    externalRetrofitRxJava = 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    externalOkHttp = 'com.squareup.okhttp3:okhttp:3.9.1'
+    externalOkHttpLogging = 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+    externalGson = 'com.google.code.gson:gson:2.8.2'
+
+    externalRxJava = 'io.reactivex.rxjava2:rxjava:2.1.3';
+    externalRxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.1';
+    externalRxLifecycle = 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+    externalRxLifecycleAndroid = 'com.trello.rxlifecycle2:rxlifecycle-android:2.1.0'
+
+    externalGlide = 'com.github.bumptech.glide:glide:4.0.0'
+    externalGlideCompiler = 'com.github.bumptech.glide:compiler:4.0.0'
+    externalGlideOkHttp = 'com.github.bumptech.glide:okhttp3-integration:4.0.0'
+
+    externalGreendao = 'org.greenrobot:greendao:3.1.0'
+    externalGreendaoGenerator = 'org.greenrobot:greendao-generator:3.1.0'
+
+    externalRebound = 'com.facebook.rebound:rebound:0.3.8'
+    externalBlur = 'jp.wasabeef:blurry:2.1.1'
+    externalTags = 'com.hyman:flowlayout-lib:1.1.2'
+
+    externalSubsamplingScaleImageView = 'com.davemorrissey.labs:subsampling-scale-image-view:3.7.2'
+    externalEasyPermissions = 'pub.devrel:easypermissions:1.0.0'
+    externalWechatSdk = 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.4.0'
+    externalAliyunOssSdk = 'com.aliyun.dpa:oss-android-sdk:2.4.2'
+}

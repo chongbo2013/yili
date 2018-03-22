@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="110dp"
+    android:layout_height="269dp"
+    android:background="@drawable/popup_list"
+    android:divider="@drawable/divider_horizontal_padding_10dp"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.hots.all"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.hots.note"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_trip"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.hots.trip"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_active"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.hots.active"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_footprint"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.hots.footprint"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_live"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.hots.live"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_destination"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/people.hots.destination"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_title_small"
+        android:gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+</LinearLayout>

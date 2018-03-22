@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting">设置</string>
+
+    <string name="setting.personal">个人信息</string>
+    <string name="setting.address">收货地址</string>
+    <string name="setting.certification">实名认证</string>
+
+    <string name="setting.cache">清理缓存</string>
+    <string name="setting.about">关于众游</string>
+    <string name="setting.message.sound">私信声音提示设置</string>
+    <string name="setting.message.vibrate">私信震动提示设置</string>
+
+    <string name="setting.exit">退出账号</string>
+
+    <string name="shipping.address">收货地址</string>
+    <string name="shipping.add">添加新地址</string>
+    <string name="shipping.asdefault">设为默认地址</string>
+    <string name="shipping.edit">编辑</string>
+    <string name="shipping.delete">删除</string>
+    
+    <string name="shipping.name">姓名</string>
+    <string name="shipping.phone">电话</string>
+    <string name="shipping.region">地区</string>
+    <string name="shipping.detail.address">地址</string>
+    <string name="shipping.remark">备注</string>
+
+    <string name="shipping.name.hint">请输入姓名</string>
+    <string name="shipping.phone.hint">请输入手机号码</string>
+    <string name="shipping.region.hint">请选择地区</string>
+    <string name="shipping.detail.address.hint">5&#8211;50个字，不能全部为数字</string>
+    <string name="shipping.remark.hint">填写补充说明</string>
+
+    <string name="shipping.edit.success">编辑成功</string>
+    <string name="shipping.add.success">新增成功</string>
+
+    <string name="certification.appellation">亲爱的众游用户</string>
+    <string name="certification.tip.uncompleted">为了保证账号安全，请通过实名认证，通\n过实名认证可以获得更好的体验</string>
+    <string name="certification.tip.completed">您已认证完成</string>
+    <string name="certification.onekey">一键前往认证</string>
+    <string name="certification.tip.safety">众游旅行保证您的信息安全</string>
+    <string name="certification.info.tip">请您如实准确填写本人信息，否则驳回认证</string>
+    <string name="certification.info.name">请填写身份证上的姓名</string>
+    <string name="certification.info.id">请填写正确身份证号码</string>
+
+    <string name="cache.clean">是否清空缓存？</string>
+
+    <string name="about.name">众游</string>
+    <string name="about.crow.funding.service">众筹服务使用协议</string>
+    <string name="about.feedback">意见建议</string>
+    <string name="about.ours">关于我们</string>
+    <string name="about.copyright">Copyright &#169; 2015&#8211;2035</string>
+    <string name="about.company">杭州众游科技有限公司</string>
+
+    <string name="feedback.hint">为了提供更好的旅行服务，请提出您宝贵的意见。</string>
+</resources>

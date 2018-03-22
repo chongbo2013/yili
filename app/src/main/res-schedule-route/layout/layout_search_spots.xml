@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_searchbar">
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        tools:hint="搜索国家或城市"
+        android:textColorHint="@color/color_text"
+        android:textColor="@color/color_title_big"
+        android:drawableLeft="@drawable/ico_searchbar_search"
+        android:drawablePadding="4dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="28dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="@dimen/fonts_tip"
+        android:textColorHint="@color/color_text"
+        android:textColor="@color/color_title_big"
+        android:drawableLeft="@drawable/ico_searchbar_search"
+        android:drawablePadding="4dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionDone"/>
+
+    <ImageView
+        android:id="@+id/iv_clear"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:scaleType="center"
+        android:src="@drawable/ico_clear_pwd"
+        android:layout_gravity="right|center_vertical"/>
+
+</FrameLayout>

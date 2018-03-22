@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@android:color/transparent"
+        app:statusBarBackground="@android:color/transparent">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/color_main"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="@android:color/transparent"
+            app:titleEnabled="false">
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseParallaxMultiplier="0.3">
+
+                <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_place_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    tools:text="普吉岛"
+                    android:textSize="@dimen/head_big"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/ico_top_location"
+                    android:drawablePadding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:maxLines="1"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_travel_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_below="@id/tv_place_name"
+                    tools:text="摄影/度假 旅行游记"
+                    android:textSize="@dimen/fonts_desc"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/ll_praise"
+                    android:layout_below="@id/tv_travel_tags"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_praise"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ico_top_praise"/>
+
+                    <TextView
+                        android:id="@+id/tv_praise_count"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        tools:text="12321人"
+                        android:textSize="@dimen/head_small"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ico_top_gallery"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardStyle"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_praise"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="108dp"
+                            android:src="@drawable/bg_preview_map"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentRight="true"/>
+
+                        <com.lots.travel.widget.RoundImageView
+                            android:id="@+id/iv_portrait"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:riv_border_radius="2dp"
+                            tools:src="@drawable/img_tang"
+                            android:scaleType="centerCrop"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="唐艺昕"
+                            android:textColor="@color/color_title_big"
+                            android:textSize="@dimen/head_small"
+                            android:layout_alignTop="@id/iv_portrait"
+                            android:layout_toRightOf="@id/iv_portrait"
+                            android:layout_marginLeft="10dp"
+                            tools:drawableRight="@drawable/ico_female"
+                            android:drawablePadding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_profession"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_username"
+                            android:layout_alignLeft="@id/tv_username"
+                            tools:text="演员 艺人 明星"
+                            android:textSize="@dimen/fonts_tip"
+                            android:textColor="@color/color_title_small"
+                            android:layout_marginTop="5dp"/>
+
+                        <FrameLayout
+                            android:id="@+id/fl_follow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignLeft="@id/iv_portrait"
+                            android:layout_alignRight="@id/iv_portrait"
+                            android:layout_below="@id/iv_portrait">
+
+                            <TextView
+                                android:id="@+id/tv_gz"
+                                android:button="@android:color/transparent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/schedule.userinfo.gz"
+                                android:textSize="@dimen/fonts_tip"
+                                android:textColor="@color/color_main"
+                                android:paddingTop="1dp"
+                                android:paddingBottom="1dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:background="@drawable/bg_note_detail_gz"/>
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/schedule.userinfo.map"
+                            android:textSize="@dimen/fonts_tip"
+                            android:textColor="@color/color_text"
+                            android:layout_alignLeft="@id/tv_username"
+                            android:layout_alignTop="@id/fl_follow"
+                            android:layout_alignBottom="@id/fl_follow"
+                            android:gravity="center_vertical"
+                            android:drawableRight="@drawable/arrow_right_gray"
+                            android:drawablePadding="5dp"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBarSize"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:minHeight="@dimen/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/btn_nav_foreground"
+                    android:src="@drawable/ico_back_nav"
+                    android:scaleType="center"
+                    android:layout_marginLeft="9.5dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <RadioGroup
+                    android:id="@+id/tabs"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mine_tab_background">
+
+                    <RadioButton
+                        android:id="@+id/tab_note"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/fonts_tip"
+                        android:textColor="@color/text_mine_tab"
+                        android:background="@drawable/mine_tab_left"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/note.detail.note"/>
+
+                    <RadioButton
+                        android:id="@+id/tab_route"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/fonts_tip"
+                        android:textColor="@color/text_mine_tab"
+                        android:background="@drawable/mine_tab_right"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/note.detail.route"/>
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ico_share_nav"
+                    android:background="@drawable/btn_nav_foreground"
+                    android:scaleType="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="right|center_vertical"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.lots.travel.widget.NestedViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.lots.travel.schedule.widget.CircleIndicatorLayout
+        android:id="@+id/circle_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/toolbar_container"
+        android:background="@android:color/white"
+        app:circleRadius="15dp"
+        app:circleBackgroundDrawable="@drawable/shape_circle_day"
+        app:circleTextSize="@dimen/circle_indicator_size"
+        app:circleTextColor="@android:color/white"
+        app:circlePadding="6dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_worth"
+            style="@style/CardStyle"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/tv_worth_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="@string/note.detail.worth.desc"
+                    android:textColor="@color/color_text_secondary"
+                    android:textSize="@dimen/head_small"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="0.5dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/tv_worth_desc"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/color_divider"
+                    android:layout_marginBottom="10dp"/>
+
+                <FrameLayout
+                    android:id="@+id/fl_notworth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@id/divider"
+                    android:layout_alignBottom="@id/divider"
+                    android:layout_toLeftOf="@id/divider">
+
+                    <TextView
+                        android:id="@+id/tv_notworth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/note.detail.notworth"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/fonts_tip"
+                        android:drawableRight="@drawable/ico_bottom_notworth"
+                        android:drawablePadding="4dp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_worth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@id/divider"
+                    android:layout_alignBottom="@id/divider"
+                    android:layout_toRightOf="@id/divider">
+
+                    <TextView
+                        android:id="@+id/tv_worth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/note.detail.worth"
+                        android:textColor="@color/color_text_secondary"
+                        android:textSize="@dimen/fonts_tip"
+                        android:drawableRight="@drawable/ico_bottom_worth"
+                        android:drawablePadding="4dp"/>
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_comment"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:background="@drawable/btn_bottom_white"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="@dimen/fonts_tip"
+                android:text="@string/note.detail.comment"
+                android:drawableTop="@drawable/ico_bottom_comment"
+                android:paddingTop="10dp"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_divider"/>
+
+            <Button
+                android:id="@+id/btn_collect"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:enabled="true"
+                android:background="@drawable/btn_bottom_white"
+                android:textColor="@color/color_text_secondary"
+                android:textSize="@dimen/fonts_tip"
+                android:text="@string/note.detail.collect"
+                android:drawableTop="@drawable/ico_bottom_collect_dis"
+                android:paddingTop="10dp"/>
+
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_bottom_main"
+                android:textColor="@color/btn_bottom_main_text"
+                android:textSize="@dimen/head_big"
+                android:text="@string/matched.route.route.copy"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout >

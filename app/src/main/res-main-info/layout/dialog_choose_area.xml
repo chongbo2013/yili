@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="middle"
+    android:divider="@drawable/divider_horizontal"
+    android:background="@drawable/bg_dialog_publish">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fonts_desc"
+            android:paddingTop="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/btn_choose_birth"/>
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="浙江 杭州 萧山区"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fonts_desc"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/confirm"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fonts_desc"
+            android:paddingTop="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/btn_choose_birth"/>
+
+    </FrameLayout>
+
+    <com.lots.travel.widget.picker.tools.PickerGroupLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:pglDividerHeight="0.5dp"
+        app:pglDividerColor="@color/color_divider">
+
+        <com.lots.travel.widget.picker.core.PickerView
+            android:id="@+id/v_province"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:shadowDrawable="@drawable/shadow_white"
+            app:highlightTextColor="@android:color/black"
+            app:highlightTextSize="@dimen/fonts_desc"
+            app:textColor="@color/color_text_secondary"
+            app:textSize="@dimen/fonts_desc"
+            app:itemHeight="27dp"
+            app:centerClipHeight="30dp"
+            app:tiltDegree="20"
+            app:cycle="false"/>
+
+        <com.lots.travel.widget.picker.core.PickerView
+            android:id="@+id/v_city"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:shadowDrawable="@drawable/shadow_white"
+            app:highlightTextColor="@android:color/black"
+            app:highlightTextSize="@dimen/fonts_desc"
+            app:textColor="@color/color_text_secondary"
+            app:textSize="@dimen/fonts_desc"
+            app:itemHeight="27dp"
+            app:centerClipHeight="30dp"
+            app:tiltDegree="20"
+            app:cycle="false"/>
+
+        <com.lots.travel.widget.picker.core.PickerView
+            android:id="@+id/v_district"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:shadowDrawable="@drawable/shadow_white"
+            app:highlightTextColor="@android:color/black"
+            app:highlightTextSize="@dimen/fonts_desc"
+            app:textColor="@color/color_text_secondary"
+            app:textSize="@dimen/fonts_desc"
+            app:itemHeight="27dp"
+            app:centerClipHeight="30dp"
+            app:tiltDegree="20"
+            app:cycle="false"/>
+
+    </com.lots.travel.widget.picker.tools.PickerGroupLayout>
+
+</LinearLayout>

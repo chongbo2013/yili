@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:background="@drawable/shape_circle_day"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:text="D2"
+        android:gravity="center"
+        android:textSize="@dimen/circle_indicator_size"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="7dp"
+        android:layout_gravity="left|center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:text="@string/note.move.add"
+        android:textSize="@dimen/fonts_tip"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_swap_add"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"/>
+
+</FrameLayout>

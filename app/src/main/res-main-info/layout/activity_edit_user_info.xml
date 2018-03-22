@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:statusBarBackground="@android:color/transparent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/color_main"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@android:color/transparent"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/img_tang_portrait"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.4" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBarSize"
+                android:layout_gravity="top"
+                android:gravity="top"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9.5dp"
+                    android:background="@drawable/btn_nav_foreground"
+                    android:scaleType="center"
+                    android:src="@drawable/ico_back_nav" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/info.title"
+                    android:textSize="@dimen/head_medium"
+                    android:textColor="@android:color/white"
+                    android:alpha="0"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/ll_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.lots.travel.widget.RoundImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    app:riv_border_radius="4dp"
+                    app:riv_border_width="1dp"
+                    app:riv_border_color="@android:color/white"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/head_medium"
+                    tools:text="唐艺昕"
+                    tools:drawableRight="@drawable/ico_female"/>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horizontal"
+                    android:showDividers="middle"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="true"
+                        app:editLabel="@string/info.nickname"
+                        app:editHint="@string/info.nickname.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="true"
+                        app:canEdit="false"
+                        app:editLabel="@string/info.sex"
+                        app:editValue="@string/female"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="true"
+                        app:canEdit="false"
+                        app:editLabel="@string/info.birth"
+                        app:editHint="@string/info.birth.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_constellation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:editLabel="@string/info.constellation"
+                        app:editHint="@string/info.constellation.hint"
+                        app:canEdit="false"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:divider="@drawable/divider_horizontal"
+                    android:showDividers="middle">
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_emotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="true"
+                        app:canEdit="false"
+                        app:editLabel="@string/info.emotion"
+                        app:editHint="@string/info.emotion.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="false"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.height"
+                        app:editHint="@string/info.height.hint"
+                        app:isDigit="true"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="false"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.weight"
+                        app:editHint="@string/info.weight.hint"
+                        app:isDigit="true"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:divider="@drawable/divider_horizontal"
+                    android:showDividers="middle">
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="false"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.company"
+                        app:editHint="@string/info.company.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_profession"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="true"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.profession"
+                        app:editHint="@string/info.profession.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="false"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.school"
+                        app:editHint="@string/info.school.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_department"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="false"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.department"
+                        app:editHint="@string/info.department.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="true"
+                        app:canEdit="false"
+                        app:editLabel="@string/info.location"
+                        app:editHint="@string/info.location.hint"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/CardStyle"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:divider="@drawable/divider_horizontal"
+                    android:showDividers="middle">
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="false"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.mail"
+                        app:editHint="@string/info.mail.hint"/>
+
+                    <com.lots.travel.widget.EditUserLayout
+                        android:id="@+id/v_qq"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_user_info_height"
+                        android:layout_gravity="center_horizontal"
+                        app:showStar="false"
+                        app:canEdit="true"
+                        app:editLabel="@string/info.qq"
+                        app:editHint="@string/info.qq.hint"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/save"
+                android:textColor="@color/btn_bottom"
+                android:textSize="@dimen/head_medium"
+                android:gravity="center"
+                android:background="@drawable/btn_bottom_round"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

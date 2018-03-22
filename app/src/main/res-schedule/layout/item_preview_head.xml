@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/img_cover_demo"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_trip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        tools:text="普吉岛"
+        android:textSize="@dimen/head_big"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/ico_top_location"
+        android:drawablePadding="5dp"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_travel_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:drawableRight="@drawable/ico_preview_edit"
+        android:drawablePadding="4dp"
+        tools:text="摄影/度假 旅行游记"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_below="@+id/tv_trip_name"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_country"
+        android:layout_below="@id/tv_travel_tags"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <com.lots.travel.widget.RoundImageView
+            android:id="@+id/iv_country"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            app:riv_border_radius="15dp"
+            tools:src="@drawable/img_tang"/>
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:text="泰国"
+            android:textSize="@dimen/head_small"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_top_gallery"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_country"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:src="@drawable/bg_preview_map"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"/>
+
+            <com.lots.travel.widget.RoundImageView
+                android:id="@+id/iv_portrait"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:riv_border_radius="5dp"
+                tools:src="@drawable/img_tang"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="唐艺昕"
+                android:textColor="@color/color_title_big"
+                android:textSize="@dimen/head_small"
+                android:layout_alignTop="@id/iv_portrait"
+                android:layout_toRightOf="@id/iv_portrait"
+                android:layout_marginLeft="10dp"
+                tools:drawableRight="@drawable/ico_female"
+                android:drawablePadding="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_username"
+                android:layout_alignLeft="@id/tv_username"
+                tools:text="演员 艺人 明星"
+                android:textSize="@dimen/fonts_desc"
+                android:textColor="@color/color_title_small"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_auth"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="@string/schedule.userinfo.auth"
+                android:textSize="@dimen/fonts_desc"
+                android:textColor="@color/color_main"
+                android:layout_alignLeft="@id/iv_portrait"
+                android:layout_alignRight="@id/iv_portrait"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/iv_portrait"
+                android:background="@drawable/bg_preview_auth"/>
+
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/schedule.userinfo.map"
+                android:textSize="@dimen/fonts_desc"
+                android:textColor="@color/color_text"
+                android:layout_alignLeft="@id/tv_username"
+                android:layout_alignTop="@id/tv_auth"
+                android:layout_alignBottom="@id/tv_auth"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:drawablePadding="5dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

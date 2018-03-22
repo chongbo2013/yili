@@ -1,0 +1,7 @@
+include ':app'
+include ':AliyunFileDownloader'
+include ':AliyunVideoSdk'
+include ':AliyunView'
+include ':STMobileJNI'
+include ':IMKit'
+include ':IMLib'

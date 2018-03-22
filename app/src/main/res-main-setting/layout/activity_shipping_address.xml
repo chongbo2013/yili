@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/shipping.address"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/fl_toolbar">
+
+        <com.lots.travel.widget.LinearItemsLayout
+            android:id="@+id/ll_items"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal_padding_10dp"
+            android:showDividers="middle"/>
+
+    </android.support.v7.widget.CardView>
+    
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save"
+        android:textSize="@dimen/head_big"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_save_shipping_address"
+        android:gravity="center"
+        android:enabled="false"/>
+
+</RelativeLayout>

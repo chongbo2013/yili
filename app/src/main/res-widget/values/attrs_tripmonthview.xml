@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TripMonthView">
+        <attr name="currentMonth" format="string"/>
+        <attr name="autoMeasured" format="boolean"/>
+        <attr name="cellSize" format="dimension"/>
+        <attr name="cellChooseSize" format="dimension"/>
+        <attr name="cellTextSize" format="dimension"/>
+        <attr name="cellTextColor" format="color|reference"/>
+        <attr name="cellChooseTextColor" format="color|reference"/>
+        <attr name="cellDisableTextColor" format="color|reference"/>
+        <attr name="fillColor" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

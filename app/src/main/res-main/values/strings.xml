@@ -1,0 +1,91 @@
+<resources>
+    <string name="exit.double.click">再次点击，退出程序</string>
+    <string name="tab.destination">城市</string>
+    <string name="tab.trip">旅行</string>
+    <string name="tab.live">现场</string>
+    <string name="tab.mine">我的</string>
+
+    <string name="menuitem.create.travel">创建旅行</string>
+    <string name="menuitem.travel.notes">写游记</string>
+    <string name="menuitem.footprint">发布足迹</string>
+    <string name="menuitem.booking.travel">预约旅行</string>
+    <string name="menuitem.brigade.snap">旅拍相机</string>
+    <string name="menuitem.travel.live">旅行直播</string>
+    <string name="menuitem.message">消息</string>
+    <string name="menuitem.mall">特惠商城</string>
+    
+    <string name="permission.audio.record">录音权限</string>
+    
+    <string name="mine.follow">关注</string>
+    <string name="mine.fans">粉丝</string>
+    <string name="mine.center">我的中心</string>
+    <string name="mine.footprint">我的足迹</string>
+    
+    <string name="mine.content.order">我的订单</string>
+    <string name="mine.content.trip">我的旅行</string>
+    <string name="mine.content.activity">我的活动</string>
+    <string name="mine.content.crowd.funding">我的众筹</string>
+    <string name="mine.content.repay">我的回报</string>
+    <string name="mine.content.wallet">我的钱包</string>
+    <string name="mine.content.favorite">我的收藏</string>
+    <string name="mine.content.want.dst">我想去的目的地</string>
+    <string name="mine.content.follow">我关注的旅行达人</string>
+    <string name="mine.content.label">我的旅行标签</string>
+    <string name="mine.content.group">我的群组</string>
+
+    <string name="message">消息</string>
+    <string name="message.blacklist">黑名单</string>
+    <string name="message.list">消息列表</string>
+    <string name="message.group">我的群组</string>
+    <string name="message.notification">系统通知</string>
+
+    <string name="live.filter">筛选</string>
+    <string name="live.title.note">游记</string>
+    <string name="live.title.footprint">足迹</string>
+    <string name="live.title.video">直播</string>
+    <string name="live.title.all">现场</string>
+    <string name="live.launch">发起</string>
+
+    <string name="main.more">更多</string>
+
+    <string name="live.choose.note">只看游记</string>
+    <string name="live.choose.footprint">只看足迹</string>
+    <string name="live.choose.video">只看直播</string>
+    <string name="live.choose.all">全部</string>
+
+    <string name="person.tab.home">Ta的主页</string>
+    <string name="person.tab.footprint">旅行足迹</string>
+    <string name="person.tab.photograph">旅拍相机</string>
+
+    <string name="person.focus.add">+关注</string>
+    <string name="person.contact">联系</string>
+    <string name="person.hot">Ta的热门</string>
+
+    <string name="person.nickname">昵称</string>
+    <string name="person.sex">性别</string>
+    <string name="person.profession">职业</string>
+    <string name="person.emotion">感情状况</string>
+    <string name="person.location">所在地</string>
+    <string name="person.join.time">注册时间</string>
+    <string name="person.home.expand">展开查看更多</string>
+    <string name="person.home.collapse">收起</string>
+
+    <string name="person.focus.cancel">取消关注</string>
+    <string name="person.focus.group">分组</string>
+
+    <string name="person.contact.audio">语音通话</string>
+    <string name="person.contact.message">私信</string>
+
+    <string name="person.hot.all">全部</string>
+    <string name="person.hot.note">游记</string>
+    <string name="person.hot.recruit">招募</string>
+    <string name="person.hot.reward">悬赏</string>
+    <string name="person.hot.activity">活动</string>
+
+    <string name="person.profile.empty">个人简介</string>
+    
+    <string name="live.publish.footprint">发布现场</string>
+    <string name="live.publish.note">编写游记</string>
+    <string name="live.publish.live">发起直播</string>
+    <string name="trip.search.hint">请输入关键词搜索</string>
+</resources>

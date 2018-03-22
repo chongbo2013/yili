@@ -1,0 +1,85 @@
+<resources>
+	<string name="male">男</string>
+	<string name="female">女</string>
+    <string name="secret">保密</string>
+	
+	<string name="emotion.single">单身</string>
+	<string name="emotion.married">已婚</string>
+	<string name="emotion.divorce">离异</string>
+
+	<string name="info.title">编辑信息</string>
+
+	<string name="info.nickname">昵称</string>
+	<string name="info.nickname.hint">请输入姓名</string>
+	<string name="info.sex">性别</string>
+	<string name="info.birth">生日</string>
+	<string name="info.birth.hint">请选择生日</string>
+	<string name="info.constellation">星座</string>
+	<string name="info.constellation.hint">您还没有选择生日哦</string>
+
+	<string name="info.emotion">感情状况</string>
+	<string name="info.emotion.hint">请输入感情状况</string>
+	<string name="info.height">身高(cm)</string>
+	<string name="info.height.hint">请输入身高</string>
+	<string name="info.weight">体重(kg)</string>
+	<string name="info.weight.hint">请输入体重</string>
+
+	<string name="info.company">公司</string>
+	<string name="info.company.hint">请输入公司名称</string>
+	<string name="info.profession">职业</string>
+	<string name="info.profession.hint">请输入职业</string>
+	<string name="info.school">学校</string>
+	<string name="info.school.hint">请输入学校</string>
+	<string name="info.department">专业</string>
+	<string name="info.department.hint">请输入专业</string>
+	<string name="info.location">所在地</string>
+	<string name="info.location.hint">请选择所在地</string>
+	
+	<string name="info.mail">邮箱</string>
+	<string name="info.mail.hint">请输入邮箱</string>
+	<string name="info.qq">QQ</string>
+	<string name="info.qq.hint">请输入QQ</string>
+
+	<string name="info.album.title">选取图片</string>
+
+    <string name="info.choose.birth">请选择日期</string>
+
+	<string name="travel.tags">旅行标签</string>
+	<string name="travel.tags.travel">旅行标签</string>
+	<string name="travel.tags.interest">兴趣标签</string>
+	<string name="travel.tags.most">&#160;最多选10个</string>
+	<string name="travel.tags.save.success">保存成功</string>
+
+	<string name="follow.places.countries">国家</string>
+	<string name="follow.places.cities">城市</string>
+	<string name="follow.places.spots">景点</string>
+
+	<string name="follow.items.trip">招募</string>
+	<string name="follow.items.activity">活动</string>
+	<string name="follow.items.offering">悬赏</string>
+	<string name="follow.items.note">游记</string>
+	<string name="items.trip.place.go">%s出发</string>
+	<string name="items.trip.time.go">出发时间：yyyy年MM月dd日</string>
+
+	<string name="items.active.time.go">yyyy年MM月dd日&#160;HH:mm</string>
+	
+	
+	<string name="people.follow">关注</string>
+	<string name="people.followed">已关注</string>
+	<string name="people.contact">联系</string>
+	<string name="people.hots">TA的热门</string>
+
+	<string name="people.follow.cancel">取消关注</string>
+	<string name="people.follow.group">分组</string>
+	
+	<string name="people.contact.voice">语音通话</string>
+	<string name="people.contact.message">私信</string>
+
+	<string name="people.hots.all">全部</string>
+	<string name="people.hots.note">游记</string>
+	<string name="people.hots.trip">招募</string>
+	<string name="people.hots.active">活动</string>
+	<string name="people.hots.footprint">足迹</string>
+	<string name="people.hots.live">直播</string>
+	<string name="people.hots.destination">景点</string>
+</resources>

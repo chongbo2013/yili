@@ -1,0 +1,11 @@
+live - 首页全球直播
+mine - 个人中心 足迹列表
+person - 他人足迹列表
+
+  mine与person部分足迹列表的区别在于mine可以编辑，person不能编辑。实际上可以共用一个，但是，后续如果需求改动
+修改上回麻烦，所以，mine、person区分开，在不同的目录。
+
+  live显示上与person、mine的足迹列表稍有不同，没有显示当前的状态之类的信息。
+
+  总之，显示上主要部分live、person、mine都是一致的，只是稍有不同。将一致的部分都放在了TripItem等XXXItem中。
+即live、person、mine公共的部分在widget或者footprint根目录。

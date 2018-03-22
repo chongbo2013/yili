@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="booking">预约</string>
+    <string name="booking.setting">预约旅行</string>
+    <string name="detail">详情</string>
+    <string name="booking.date">意向旅行时间</string>
+    <string name="booking.budget">旅行预算</string>
+    <string name="booking.undetermined">待定</string>
+    <string name="booking.service">你愿意为旅伴提供的领队服务</string>
+    <string name="booking.push">如有合适旅行是否接受推送？</string>
+
+    <string name="more">更多</string>
+</resources>

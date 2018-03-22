@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/iv_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_src_dst_direction"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="26dp"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/divider_left"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignTop="@id/iv_direction"
+        android:layout_toLeftOf="@id/iv_direction"
+        android:layout_marginRight="23dp"/>
+
+    <View
+        android:id="@+id/divider_right"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@id/divider_left"
+        android:layout_toRightOf="@id/iv_direction"
+        android:layout_marginLeft="23dp"/>
+
+    <TextView
+        android:id="@+id/tv_time_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/divider_left"
+        android:layout_alignBottom="@id/divider_left"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_time_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/divider_right"
+        android:layout_alignBottom="@id/divider_right"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_anchor"
+        android:textSize="@dimen/head_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/divider_left"
+        android:layout_alignTop="@id/divider_left"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_src_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_anchor"
+        android:layout_alignBottom="@id/tv_anchor"
+        android:drawablePadding="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_dst_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/divider_right"
+        android:layout_alignBottom="@id/tv_anchor"
+        android:drawablePadding="4dp"/>
+
+</merge>

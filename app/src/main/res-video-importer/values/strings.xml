@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gallery_all_media">相机胶卷</string>
+    <string name="video_duration">%1$02d:%2$02d:%3$02d</string>
+    <string name="aliyun_video_error">视频错误</string>
+    <string name="message_max_duration_import">视频总时长不超过30秒，请裁剪后继续!</string>
+    <string name="wait">请稍候</string>
+    <string name="please_select_video">请选择视频</string>
+    <string name="total_duration_label_import">总时长</string>
+    <string name="next_camera_roll_import">下一步</string>
+</resources>

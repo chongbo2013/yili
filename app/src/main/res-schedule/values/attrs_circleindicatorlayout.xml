@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleIndicatorLayout">
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="circleBackgroundDrawable" format="reference"/>
+        <attr name="circleTextSize" format="dimension"/>
+        <attr name="circleTextColor" format="reference|color"/>
+        <attr name="circleCount" format="integer"/>
+        <attr name="circlePadding" format="dimension"/>
+        <attr name="checkedPosition" format="integer"/>
+    </declare-styleable>
+</resources>

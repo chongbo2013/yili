@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="place.search">搜索国家或城市</string>
+    <string name="place.dst.choose">选择目的地</string>
+    <string name="place.dst.search">搜索目的地</string>
+
+    <string name="place.search.key.spot">输入景点关键词</string>
+    <string name="place.search.key.hotel">输入酒店关键词</string>
+    <string name="place.search.key.food">输入餐厅关键词</string>
+
+    <string name="place.tab.spot">景点</string>
+    <string name="place.tab.hotel">酒店</string>
+    <string name="place.tab.restaurant">餐厅</string>
+    
+    <string name="spot.yw.time">游玩%.1f小时</string>
+    <string name="place.yw.day">适合%d天以上</string>
+    <string name="score.extra">%.1f分</string>
+    <string name="price.extra">起</string>
+    
+    <string name="place.choose">选择</string>
+    <string name="place.add">添加</string>
+
+    <string name="place.comment">写评论</string>
+    <string name="place.comment.publish">发布</string>
+    <string name="place.comment.rating.tip">点击星星评价</string>
+    <string name="place.comment.rating.empty">请先进行评分</string>
+</resources>

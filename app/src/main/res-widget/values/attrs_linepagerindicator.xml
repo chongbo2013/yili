@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LinePagerIndicator">
+        <attr name="selectWidth" format="dimension"/>
+        <attr name="unSelectWidth" format="dimension"/>
+        <attr name="selectColor" format="color|reference"/>
+        <attr name="unSelectColor" format="color|reference"/>
+        <attr name="lineHeight" format="dimension"/>
+        <attr name="gapHorizontal" format="dimension"/>
+        <attr name="lineCount" format="integer"/>
+        <attr name="selectPos" format="integer"/>
+        <attr name="selectOffset" format="float"/>
+    </declare-styleable>
+</resources>

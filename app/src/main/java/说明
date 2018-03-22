@@ -1,0 +1,20 @@
+base - BaseActivity、BaseFragment等
+booking - 预约
+footprint - 游记、足迹、直播等信息在列表中的展示
+login - 登录
+main - 主页部分：城市、旅行、现场、我的，以及我的衍生出来的部分，设置、消息、他人信息等
+network - 网络处理
+place - 国家城市、景点、餐厅等
+recruit - 招募
+schedule - 行程、游记：编辑、预览等
+store - sp、file、数据库
+util：工具类
+video：视频处理
+widget：控件
+wxapi：微信页面
+
+AccountManager管理当前登录的账户
+
+NOTE：
+  数据库部分表id转为string！！！
+  网络请求加上bindUntilEvent(ActivityEvent.DESTROY)，避免内存泄漏！！！

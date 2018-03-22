@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="product.entering">产品录入</string>
+    <string name="entering.src.dst">出发时间/出发地点</string>
+    <string name="entering.remain.seats">剩余席位</string>
+    <string name="entering.hint.seats">请输入人数</string>
+    <string name="entering.expenses">旅费金额</string>
+    <string name="entering.expenses.add">添加补充说明</string>
+    <string name="entering.expenses.amend">更改补充说明</string>
+    <string name="entering.hint.expenses">请输入旅费金额</string>
+    <string name="entering.preferential">优惠信息</string>
+    <string name="entering.preferential.add">添加</string>
+    <string name="entering.preferential.amend">更改</string>
+    <string name="entering.features">行程特色</string>
+    <string name="entering.insurance">旅行保险</string>
+    <string name="entering.insurance.more">更多保险</string>
+    <string name="entering.visa">签证须知</string>
+    <string name="entering.visa.notice">自动导入众游旅行签证须知</string>
+    <string name="entering.enter">报名须知</string>
+    <string name="entering.enter.notice">自动导入众游旅行报名须知</string>
+    <string name="entering.promote">是否需要付费推广？</string>
+    
+    <string name="entering.time.go">出发时间</string>
+    <string name="entering.time.back">返程时间</string>
+    <string name="entering.place.src">出发地</string>
+    <string name="entering.place.dst">目的地</string>
+    
+    <string name="expense.return.ticket">往返机票</string>
+    <string name="expense.traffic">目的地交通</string>
+    <string name="expense.hotel">酒店住宿</string>
+    <string name="expense.admission">景点门票</string>
+    <string name="expense.guide">导游服务</string>
+    <string name="expense.shoot">旅拍服务</string>
+    <string name="expense.insurance">旅行保险</string>
+    <string name="expense.visa">签证费用</string>
+    <string name="expense.dinner.all">全部正餐</string>
+    <string name="expense.dinner">部分正餐</string>
+    <string name="expense.single.room">单人房差</string>
+    <string name="expense.own.expense">自费项目</string>
+
+    <string name="expense.instruction">旅费说明</string>
+    <string name="instruction.tab.include">费用包含</string>
+    <string name="instruction.tab.exclude">费用不包含</string>
+    <string name="instruction.expense.additional">补充说明（非必填）</string>
+    <string name="instruction.expense.price">单人入住酒店是否补缴差价</string>
+    <string name="instruction.expense.price.hint">请输入单人住房差价金额</string>
+    <string name="instruction.expense.price.title">差价金额</string>
+
+    <string name="insurance.more">更多保险</string>
+    <string name="insurance.check.rights">查看保障权益</string>
+    <string name="insurance.target">适合人群：%s</string>
+    <string name="insurance.active.time">保障时间：$1s至$2s</string>
+
+    <string name="recruit.companion">招募旅伴</string>
+    <string name="companion.src.dst">旅伴集合时间及地点</string>
+    <string name="companion.persons">招募人数</string>
+    <string name="companion.expenses">旅费金额</string>
+    <string name="companion.expenses.additional.add">添加补充说明</string>
+    <string name="companion.expenses.additional.update">更改补充说明</string>
+    <string name="companion.expenses.hint">请输入旅费金额</string>
+    <string name="companion.preferential">优惠信息</string>
+    <string name="companion.preferential.add">添加</string>
+    <string name="companion.preferential.update">更改</string>
+    <string name="companion.service">你愿意为旅伴提供的领队服务</string>
+    <string name="companion.service.more">更多</string>
+    <string name="companion.require">招募要求</string>
+    <string name="companion.insurance">报名旅伴需购买旅行保险</string>
+    <string name="companion.insurance.tip">为了您和旅伴的出行安全、避免不必要的纠纷，建议您选择下列保险，旅伴报名时将自动购买。</string>
+    <string name="companion.enter">报名须知</string>
+    <string name="companion.enter.notice">自动导入众游旅行报名须知</string>
+    <string name="companion.promote">是否需要付费推广？</string>
+
+    <string name="companion.obtain.trip.failed">获取行程信息失败</string>
+</resources>

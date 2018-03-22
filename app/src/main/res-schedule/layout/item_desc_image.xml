@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lots.travel.widget.RatioedImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/iv_desc_image"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    app:ratio="1"/>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/mine.content.favorite"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <com.lots.travel.widget.UnderlineTab
+            android:id="@+id/tab_recruit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:text="@string/follow.items.trip"
+            android:textColor="@color/text_tab_expense"
+            android:background="@android:color/transparent"
+            android:checked="true"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:background="@color/color_divider"
+            android:layout_gravity="center_vertical"/>
+        
+        <com.lots.travel.widget.UnderlineTab
+            android:id="@+id/tab_activity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:text="@string/follow.items.activity"
+            android:textColor="@color/text_tab_expense"
+            android:background="@android:color/transparent"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:background="@color/color_divider"
+            android:layout_gravity="center_vertical"/>
+
+        <com.lots.travel.widget.UnderlineTab
+            android:id="@+id/tab_offering"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:text="@string/follow.items.offering"
+            android:textColor="@color/text_tab_expense"
+            android:background="@android:color/transparent"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:background="@color/color_divider"
+            android:layout_gravity="center_vertical"/>
+
+        <com.lots.travel.widget.UnderlineTab
+            android:id="@+id/tab_note"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:text="@string/follow.items.note"
+            android:textColor="@color/text_tab_expense"
+            android:background="@android:color/transparent"/>
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/v_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

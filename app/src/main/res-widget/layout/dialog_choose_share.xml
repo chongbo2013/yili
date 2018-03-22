@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="10dp"
+	android:background="@drawable/bg_dialog_publish"
+	android:divider="@drawable/divider_horizontal"
+	android:orientation="vertical"
+	android:showDividers="middle">
+
+	<TextView
+		android:id="@+id/tvMoments"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bg_dialog_button"
+		android:gravity="center"
+		android:paddingBottom="15dp"
+		android:paddingTop="15dp"
+		android:text="@string/sharing_to_moments"
+		android:textColor="@color/color_title_big"
+		android:textSize="@dimen/head_small"/>
+
+	<TextView
+		android:id="@+id/tvFriends"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bg_dialog_button"
+		android:gravity="center"
+		android:paddingBottom="15dp"
+		android:paddingTop="15dp"
+		android:text="@string/sharing_to_friends"
+		android:textColor="@color/color_title_big"
+		android:textSize="@dimen/head_small"/>
+
+	<TextView
+		android:id="@+id/tvCancel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bg_dialog_button"
+		android:gravity="center"
+		android:paddingBottom="15dp"
+		android:paddingTop="15dp"
+		android:text="@string/cancel"
+		android:textColor="@color/color_main"
+		android:textSize="@dimen/head_small"/>
+
+</LinearLayout>

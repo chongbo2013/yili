@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <com.lots.travel.widget.picker.tools.NumberPicker
+        android:id="@+id/year_picker"
+        app:shadowDrawable="@drawable/shadow_white"
+        app:highlightTextColor="@color/color_main"
+        app:highlightTextSize="@dimen/head_medium"
+        app:textColor="@color/color_main"
+        app:textSize="@dimen/head_medium"
+        app:itemHeight="30dp"
+        app:centerClipHeight="30dp"
+        app:drawCount="5"
+        app:cycle="false"
+        app:minValue="1900"
+        app:maxValue="2017"
+        app:labelText="年"
+        app:labelTextSize="@dimen/fonts_tip"
+        app:labelTextColor="@android:color/black"
+        app:labelMarginLeft="6dp"
+        android:layout_width="100dp"
+        android:layout_height="120dp" />
+
+    <com.lots.travel.widget.picker.tools.NumberPicker
+        android:id="@+id/month_picker"
+        app:shadowDrawable="@drawable/shadow_white"
+        app:highlightTextColor="@color/color_main"
+        app:highlightTextSize="@dimen/head_medium"
+        app:textColor="@color/color_main"
+        app:textSize="@dimen/head_medium"
+        app:itemHeight="30dp"
+        app:centerClipHeight="30dp"
+        app:drawCount="5"
+        app:cycle="false"
+        app:minValue="1"
+        app:maxValue="12"
+        app:labelText="月"
+        app:labelTextSize="@dimen/fonts_tip"
+        app:labelTextColor="@android:color/black"
+        app:labelMarginLeft="6dp"
+        android:layout_width="100dp"
+        android:layout_height="120dp" />
+
+</LinearLayout>

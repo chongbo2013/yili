@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_horizontal"
+        android:background="@drawable/bg_dialog_publish">
+
+        <TextView
+            android:id="@+id/tv_footprint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/live.publish.footprint"
+            android:textSize="@dimen/head_small"
+            android:textColor="@color/color_title_big"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/bg_dialog_button"/>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_button"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/live.publish.note"
+            android:textColor="@color/color_title_big"
+            android:textSize="@dimen/head_small" />
+
+        <TextView
+            android:id="@+id/tv_live"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/live.publish.live"
+            android:textSize="@dimen/head_small"
+            android:textColor="@color/color_title_big"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/bg_dialog_button"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="@dimen/head_small"
+        android:textColor="@color/color_main"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/btn_dialog_publish"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

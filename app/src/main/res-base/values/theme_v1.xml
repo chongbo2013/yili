@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="V1AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/turquoise</item>
+        <item name="colorPrimaryDark">@color/turquoise</item>
+        <item name="colorAccent">@color/turquoise</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/screen_background</item>
+        <item name="android:actionBarSize">48dp</item>
+
+        <!-- ToggleButton默认样式 -->
+        <item name="android:buttonStyleToggle">@style/DefaultToggleButton</item>
+
+        <!-- RatingBar默认样式 -->
+        <item name="android:ratingBarStyle">@style/DefaultRatingBar</item>
+        <item name="android:ratingBarStyleSmall">@style/DefaultRatingBar</item>
+        <item name="android:ratingBarStyleIndicator">@style/DefaultRatingBar</item>
+
+        <!--
+            默认对话框样式
+            <item name="android:dialogTheme">@style/DefaultDialog</item>
+            <item name="android:alertDialogTheme">@style/DefaultAlertDialog</item>
+
+            默认弹出框样式
+            <item name="android:popupWindowStyle">@style/DefaultPopup</item>
+            <item name="android:listPopupWindowStyle">@style/DefaultListPopup</item>
+        -->
+    </style>
+
+    <style name="V1AppTheme.Splash">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+    
+    <style name="V1AppTheme.Transparent">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>　　
+    　　<item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="DefaultDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowAnimationStyle">@style/DefaultDialogAnimation</item>
+    </style>
+
+    <style name="DefaultAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/DefaultDialogAnimation</item>
+    </style>
+
+    <style name="DefaultPopup" parent="Widget.AppCompat.PopupWindow">
+        <item name="android:popupAnimationStyle">@style/DefaultPopupAnimation</item>
+    </style>
+
+    <style name="DefaultListPopup" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupAnimationStyle">@style/DefaultPopupAnimation</item>
+    </style>
+
+</resources>

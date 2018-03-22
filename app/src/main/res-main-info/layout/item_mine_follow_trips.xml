@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <include layout="@layout/layout_trip"/>
+
+    </android.support.v7.widget.CardView>
+
+    <com.lots.travel.widget.DestinationLabel
+        android:id="@+id/v_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="塞班岛"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        android:elevation="2dp"/>
+
+</RelativeLayout>

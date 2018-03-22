@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.lots.travel.widget.foreground.ForegroundImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:foreground="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/schedule.trip.date"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:text="@string/reset"
+            android:textSize="@dimen/head_small"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_head"
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fl_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_group"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_tripdate_group">
+
+                <CheckedTextView
+                    android:id="@+id/rb_date_go"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:background="@drawable/bg_tripdate_rb"
+                    android:textColor="@color/text_tripdate_rb"
+                    android:text="@string/schedule.trip.date.go"
+                    android:textSize="@dimen/fonts_desc"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+                <CheckedTextView
+                    android:id="@+id/rb_date_back"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:background="@drawable/bg_tripdate_rb"
+                    android:textColor="@color/text_tripdate_rb"
+                    android:text="@string/schedule.trip.date.back"
+                    android:textSize="@dimen/fonts_desc"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:id="@+id/anchor_x"
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv_date_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="2017/09/14"
+                android:gravity="center"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/head_small"
+                android:layout_below="@id/ll_group"
+                android:layout_toLeftOf="@id/anchor_x"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/head_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ll_group"
+                android:paddingTop="10dp"
+                android:text="@string/tilde"/>
+
+            <TextView
+                android:id="@+id/tv_date_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="2017/09/20"
+                android:gravity="center"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/head_small"
+                android:layout_below="@id/ll_group"
+                android:layout_toRightOf="@id/anchor_x"
+                android:paddingTop="10dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_months"
+        style="@style/CardStyle"
+        app:cardElevation="0dp"
+        android:clickable="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card_head"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="52dp">
+
+            <com.lots.travel.widget.calendar.trip.TripWeekView
+                android:id="@+id/week_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:weekTextSize="@dimen/fonts_desc"
+                app:weekTextColor="@color/color_title_big"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_below="@id/week_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_divider"/>
+
+            <com.lots.travel.widget.calendar.trip.ChooseDateRangeView
+                android:id="@+id/range_date_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/divider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <FrameLayout
+                android:id="@+id/fl_sticky"
+                android:layout_below="@id/divider"
+                android:layout_width="match_parent"
+                android:background="#CFFFFFFF"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:id="@+id/tv_sticky"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="2017年8月"
+                    android:gravity="center"
+                    android:textColor="@color/color_title_small"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#DDDDDD">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_divider"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_tripdate_confirm"
+            android:textColor="@color/btn_bottom_main_text"
+            android:textSize="@dimen/head_medium"
+            android:text="@string/confirm"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

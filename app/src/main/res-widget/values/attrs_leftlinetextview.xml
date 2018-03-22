@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeftLineTextView">
+        <attr name="leftLineWidth" format="dimension"/>
+        <attr name="leftLineHeight" format="dimension"/>
+        <attr name="leftLineHeightRatio" format="float"/>
+        <attr name="leftLineColor" format="color|reference"/>
+        <attr name="leftLinePadding" format="dimension"/>
+    </declare-styleable>
+</resources>

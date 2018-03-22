@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_mine_follow_peoples"
+    android:padding="10dp"
+    android:clickable="true">
+
+    <com.lots.travel.widget.RoundImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:riv_border_radius="4dp"
+        tools:src="@drawable/img_tang"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="唐艺昕"
+        android:maxLines="1"
+        android:textSize="@dimen/fonts_desc"
+        android:textColor="@color/color_main"
+        android:layout_toRightOf="@id/iv_portrait"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="4dp"
+        android:includeFontPadding="false"
+        tools:drawableRight="@drawable/ico_female"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2016年06月11日 12:40"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/fonts_tip"
+        android:layout_alignBaseline="@id/tv_name"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="回复少侠：西湖是杭州最著名的景点，所以来杭州的人都去那。。。"
+        android:textSize="@dimen/fonts_tip"
+        android:layout_toRightOf="@id/iv_portrait"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="6dp"/>
+
+</RelativeLayout>

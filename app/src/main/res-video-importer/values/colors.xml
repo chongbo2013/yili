@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_bg">#232A42</color>
+    <color name="total_duration_title">#6E768B</color>
+    <color name="total_duration_value_normal">#6E768B</color>
+    <color name="total_duration_value_over">#000021</color>
+</resources>

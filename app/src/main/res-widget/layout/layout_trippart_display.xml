@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.lots.travel.widget.RoundImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:src="@drawable/img_cover_demo"
+        android:scaleType="centerCrop"
+        app:riv_tag_gravity="center"
+        app:riv_tag_width="wrap_content"
+        app:riv_tag_height="wrap_content"
+        app:riv_tag_drawable="@drawable/img_play_cover"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <com.lots.travel.widget.VoiceDescView
+        android:id="@+id/v_voice_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_images"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/fonts_tip"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="5dp"
+        tools:text="天然的海湾屏障、海浪柔和、适合游泳。天然的海湾屏障、海浪柔和、适合游泳。"/>
+
+    <ImageView
+        android:id="@+id/iv_text_control"
+        android:layout_width="32dp"
+        android:layout_height="20dp"
+        android:scaleType="center"
+        android:src="@drawable/arrow_up"
+        android:layout_gravity="right"/>
+
+</merge>

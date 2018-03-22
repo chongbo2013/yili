@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    tools:background="@android:color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="@string/shipping.name"
+        android:textSize="@dimen/head_small"
+        android:textColor="@color/color_title_small"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/head_small"
+        android:textColor="@color/color_title_small"
+        tools:hint="@string/shipping.name.hint"
+        android:textColorHint="@color/color_text"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="60dp"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+</FrameLayout>

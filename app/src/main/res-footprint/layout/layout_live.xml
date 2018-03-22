@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp">
+
+    <com.lots.travel.widget.RoundImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:src="@drawable/img_tang"
+        android:scaleType="centerCrop"
+        app:riv_tag_gravity="center"
+        app:riv_tag_width="wrap_content"
+        app:riv_tag_height="wrap_content"
+        app:riv_tag_drawable="@drawable/img_play_cover"/>
+
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ico_module_live_live"
+        android:layout_alignTop="@id/iv_cover"
+        android:layout_alignRight="@id/iv_cover"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        tools:text="江西省·上饶市"
+        android:textColor="@color/color_main"
+        android:textSize="@dimen/fonts_tip"
+        android:drawableLeft="@drawable/ico_location_live"
+        android:drawablePadding="5dp"
+        android:layout_below="@id/iv_cover"
+        android:layout_toLeftOf="@+id/tv_visited"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_visited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="120人看过"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/fonts_tip"
+        android:layout_alignBaseline="@id/tv_location"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

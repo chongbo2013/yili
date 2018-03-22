@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image.preview">预览</string>
+    <string name="image.cancel">取消</string>
+    <string name="image.pick">我的相册</string>
+    <string name="image.done">完成</string>
+
+    <string name="service.custom">输入自定义服务（4字以内）</string>
+
+    <string name="tweet.bottom.hint">请输入评论内容</string>
+    <string name="tweet.bottom.send">发送</string>
+</resources>

@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+    buildToolsVersion externalBuildToolsVersion
+    defaultConfig {
+        applicationId "com.lots.travel"
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+        renderscriptTargetApi externalTargetSdkVersion
+        renderscriptSupportModeEnabled true
+        versionCode projectVersionCode
+        versionName projectVersionName
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main {
+        res.srcDirs += ['src/main/res-base','src/main/res-main','src/main/res-login','src/main/res-booking',
+                        'src/main/res-place','src/main/res-widget','src/main/res-media','src/main/res-main-message',
+                        'src/main/res-recruit','src/main/res-footprint','src/main/res-main-info','src/main/res-main-setting',
+                        'src/main/res-video-edit','src/main/res-video-record','src/main/res-schedule',
+                        'src/main/res-schedule-note','src/main/res-schedule-route','src/main/res-video-crop','src/main/res-video-importer']
+        jni.srcDirs = []
+        jniLibs.srcDir "src/main/libs"
+    }
+    signingConfigs {
+        release {
+            storeFile file("../sosona.jks")
+            storePassword 'Genzs88055988'
+            keyAlias 'key'
+            keyPassword 'sosona'
+        }
+
+        debug {
+            storeFile file("../sosona.jks")
+            storePassword 'Genzs88055988'
+            keyAlias 'key'
+            keyPassword 'sosona'
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+greendao {
+    schemaVersion greendaoSchemaVersion
+    daoPackage 'com.lots.travel.store.db'
+    targetGenDir 'src/main/java'
+}
+
+repositories{
+    flatDir{ dirs 'libs' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(project(':AliyunVideoSdk')) {
+        transitive = false
+    }
+    compile project(':STMobileJNI')
+    compile project(':AliyunView')
+    compile project(':IMKit')
+    compile project(':AliyunFileDownloader')
+    compile(name:'AlivcPlayer',ext:'aar')
+    compile(name:'AlivcReporter',ext:'aar')
+    compile(name:'AliyunVodPlayer',ext:'aar')
+    compile androidSupportMultidex
+    compile androidCompatV7
+    compile androidSupportDesign
+    compile androidSupportRecyclerView
+    compile androidSupportCardView
+    compile androidSupportV4
+
+    compile externalRetrofit
+    compile externalRetrofitGson
+    compile externalRetrofitRxJava
+    compile externalOkHttpLogging
+
+    compile externalRxJava
+    compile externalRxAndroid
+    compile externalRxLifecycle
+    compile externalRxLifecycleAndroid
+
+    compile externalGlide
+    annotationProcessor externalGlideCompiler
+
+    compile externalGreendao
+    compile externalGreendaoGenerator
+
+    compile externalRebound
+    compile externalBlur
+    compile externalTags
+
+    compile externalSubsamplingScaleImageView
+    compile externalEasyPermissions
+    compile externalWechatSdk
+    compile externalAliyunOssSdk
+}

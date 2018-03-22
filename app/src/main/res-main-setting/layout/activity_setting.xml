@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolse="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:background="@color/color_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_nav_foreground"
+            android:src="@drawable/ico_back_nav"
+            android:scaleType="center"
+            android:layout_marginLeft="9.5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting"
+            android:textSize="@dimen/head_medium"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_1"
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_below="@id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal_padding_10dp"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tv_personal"
+                android:layout_width="match_parent"
+                android:textColor="@color/color_title_big"
+                android:textSize="@dimen/fonts_desc"
+                android:layout_height="42dp"
+                android:text="@string/setting.personal"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:textColor="@color/color_title_big"
+                android:textSize="@dimen/fonts_desc"
+                android:layout_height="42dp"
+                android:text="@string/setting.address"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_certification"
+                android:layout_width="match_parent"
+                android:textColor="@color/color_title_big"
+                android:textSize="@dimen/fonts_desc"
+                android:layout_height="42dp"
+                android:text="@string/setting.certification"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:background="?attr/selectableItemBackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_2"
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_horizontal_padding_10dp"
+            android:showDividers="middle">
+
+            <FrameLayout
+                android:id="@+id/fl_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/color_title_big"
+                    android:textSize="@dimen/fonts_desc"
+                    android:layout_height="42dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/setting.cache"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/arrow_right_gray"
+                    android:background="?attr/selectableItemBackground"/>
+                
+                <TextView
+                    android:id="@+id/tv_cache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    toolse:text="250.37KB"
+                    android:textSize="@dimen/fonts_desc"
+                    android:textColor="@color/color_text"
+                    android:gravity="center_vertical"/>
+                
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:textColor="@color/color_title_big"
+                android:textSize="@dimen/fonts_desc"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="42dp"
+                android:text="@string/setting.about"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/arrow_right_gray"
+                android:background="?attr/selectableItemBackground"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_title_big"
+                    android:textSize="@dimen/fonts_desc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="42dp"
+                    android:text="@string/setting.message.sound"
+                    android:gravity="left|center_vertical"/>
+
+                <Switch
+                    android:id="@+id/switch_message_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_message_vibrate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_title_big"
+                    android:textSize="@dimen/fonts_desc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="42dp"
+                    android:text="@string/setting.message.vibrate"
+                    android:gravity="left|center_vertical" />
+
+                <Switch
+                    android:id="@+id/switch_message_vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        style="@style/CardStyle"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_warn"
+            android:textSize="@dimen/fonts_desc"
+            android:layout_height="42dp"
+            android:text="退出账号"
+            android:background="@drawable/btn_exit"
+            android:gravity="center"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
